@@ -1,0 +1,14 @@
+title: Blinky-Lite
+description: Blinky-Lite
+theme: just-the-docs
+
+url: https://www.blinky-lite.se
+logo: "/assets/images/project-logo.png"
+favicon_ico: "/assets/images/favicon.ico"
+color_scheme: blinky
+footer_content: "Copyright &copy; 2020-2023 BL Monitor & Control AB. Distributed by an <a href=\"https://github.com/Blinky-Lite/blinky-lite-documentation/tree/main/LICENSE\">MIT license.</a>"
+
+
+aux_links:
+  MyApps: /myapps
+  Blinky-Lite on GitHub: https://github.com/Blinky-Lite
