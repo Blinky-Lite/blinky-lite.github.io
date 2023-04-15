@@ -1,1 +1,1 @@
-# blinky-lite-documentation
+# blinky-lite documentation
