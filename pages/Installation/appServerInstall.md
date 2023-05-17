@@ -10,6 +10,6 @@ The Application Server (or Blinky-Lite Box) requires [MongoDB](https://www.mongo
 
 ### Usage
 
-Download zipped blinky-lite-box docker compose [file](https://github.com/Blinky-Lite/docker-templates/raw/master/blinky-box-docker.zip) template.  The file will unzip into a directory. Enter the directory and edit the .env file with settings of your choosing. 
+Download zipped blinky-lite-box docker compose template.  The file will unzip into a directory. Enter the directory and edit the .env file with settings of your choosing. 
 
 ----
