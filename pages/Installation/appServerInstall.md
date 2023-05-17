@@ -26,6 +26,15 @@ Download zipped  blinky-lite-box [docker compose file] template. The file will u
 * `TWOFA` - Two factor authentication flag, 0 for disable, 1 for enable
 * `ENABLEARCHIVE` - Enable archiving flag. 0 for disable, 1 for enable
 
+#### Starting the containers
+
+From a command line, enter the blinky-box-docker directory that you just unzipped and enter:
+
+```shell
+docker compose -f blinky-box.yaml up -d
+```
+On the first run, Docker will have to pull a number of images that will take some time. Once the containers have spun up you can see the Blinky-Lite application and the database application on localhost on the ports specified in the .env file.
+
 
 ----
 [MongoDB]:https://www.mongodb.com/atlas/database  
