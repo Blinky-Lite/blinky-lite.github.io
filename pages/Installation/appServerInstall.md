@@ -35,5 +35,5 @@ Download zipped  blinky-lite-box [docker compose file] template. The file will u
 [Docker Desktop]:https://www.docker.com/products/docker-desktop/  
 [docker compose file]:https://github.com/Blinky-Lite/docker-templates/raw/master/blinky-box-docker.zip  
 [Vonnage]:https://www.vonage.com/communications-apis/sms/  
-[^1]:Blinky-Lite uses Nexmo or [Vonnage] for SMS alerts. It you do not have an SMS account with Vonnage, then leave the Nexmo variables alone.
+[^1]:Blinky-Lite uses Nexmo or Vonnage for SMS alerts. It you do not have an SMS account with Vonnage, then leave the Nexmo variables alone.
 
