@@ -11,4 +11,4 @@ The Application Server (or Blinky-Lite Box) requires [MongoDB] and [MQTT] as ser
 
 ----
 [MongoDB]:https://www.mongodb.com/atlas/database  
-[MQTT]:https://mqtt.org/  
+[MQTT]:https://mqtt.org  
