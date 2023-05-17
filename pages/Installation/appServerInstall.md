@@ -13,6 +13,21 @@ The Application Server (or Blinky-Lite Box) requires [MongoDB] and [MQTT] as ser
 
 Download zipped  blinky-lite-box [docker compose file] template. The file will unzip into a directory. Enter the directory and edit the .env file with settings of your choosing. 
 
+#### Environment Variables
+
+* `BLINKYLITE_PASSWORD` - password for the MongoDB database
+* `JWTKEYSECRET` - key for the JWT security 
+* `NEXMOAPIKEY` - Vonnage sms API key[^1]
+* `NEXMOAPISECRET` - Vonnage sms API secret[^1]
+* `MAXDBSIZE` - Maximum size of the MongoDB database in bytes
+* `BLINKYPORT` - IP port of the Blinky-Lite Web application
+* `EXPRESSPORT` - IP port of the MongoDB Express Web application
+* `MQTTPORT` - IP port of MQTT communications which is usually set to 1883
+* `TWOFA` - Two factor authentication flag, 0 for disable, 1 for enable
+* `ENABLEARCHIVE` - Enable archiving flag. 0 for disable, 1 for enable
+
+
+
 ----
 [MongoDB]:https://www.mongodb.com/atlas/database  
 [MQTT]:https://mqtt.org  
