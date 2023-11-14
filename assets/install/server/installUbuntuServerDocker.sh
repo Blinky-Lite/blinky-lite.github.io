@@ -26,8 +26,8 @@ sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plug
 #sudo usermod -aG docker $USER
 sudo docker network create tunnel 
 sudo apt -y install apache2-utils 
-wget https://github.com/Blinky-Lite/blinky-compose/raw/main/scripts/startPortainer.sh
+wget https://github.com/Blinky-Lite/blinky-lite.github.io/raw/gh-pages/assets/install/server/startPortainer.sh
 chmod +x startPortainer.sh 
 ./startPortainer.sh $1
-echo '....Finished installing docker..serving Portainer on port 9000' 
+echo '....Finished installing docker..serving Portainer on port 9443' 
 
