@@ -29,5 +29,5 @@ sudo apt -y install apache2-utils
 wget https://github.com/Blinky-Lite/blinky-lite.github.io/raw/gh-pages/assets/install/server/startPortainer.sh
 chmod +x startPortainer.sh 
 ./startPortainer.sh $1
-echo '....Finished installing docker..serving Portainer on port 9443' 
+echo '....Finished installing docker..serving Portainer on port 9000, 9443' 
 
