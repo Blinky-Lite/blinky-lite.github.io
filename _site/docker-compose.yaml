@@ -2,10 +2,10 @@ version: "3.4"
   
 services:
   web:
-    image: blinkylite/empty-node-red:amd64
-    container_name: empty-node-red
+    image: blinkylite/node-red-static-web-server:amd64
+    container_name: node-red-static-web-server
     ports:
-      - "60427:60427"
+      - "8000:60427"
     volumes:
       - ./_site:/data/html-static/
     environment:
