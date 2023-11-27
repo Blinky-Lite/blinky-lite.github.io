@@ -1,0 +1,19 @@
+version: "3.4"
+  
+services:
+  web:
+    image: blinkylite/empty-node-red:amd64
+    container_name: empty-node-red
+    ports:
+      - "60427:60427"
+    volumes:
+      - ./_site:/data/html-static/
+    environment:
+      - NODEREDPORT=60427
+      - ENABLE_NODERED_EDITOR=0
+      - HTMLSTATICDIR=/data/html-static/
+networks:
+  default:
+    name: tunnel
+    external: true
+
