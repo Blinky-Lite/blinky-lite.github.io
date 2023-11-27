@@ -2,7 +2,7 @@ version: "3.4"
   
 services:
   web:
-    image: blinkylite/empty-node-red:amd64
+    image: blinkylite/node-red-static-web-server:amd64
     container_name: empty-node-red
     ports:
       - "60427:60427"
