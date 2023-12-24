@@ -4,6 +4,7 @@ services:
   web:
     image: blinkylite/node-red-static-web-server:amd64
     container_name: node-red-static-web-server
+    restart: unless-stopped
     ports:
       - "8000:60427"
     volumes:
