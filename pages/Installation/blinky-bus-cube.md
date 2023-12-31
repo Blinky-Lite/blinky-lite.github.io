@@ -17,7 +17,7 @@ has_children: false
 Blinky-Bus is a demonstration project on how to use Blinky-Lite with serial Bluetooth to communicate between the cube and tray. The function of the device is to turn on and off three LEDs.
 
 You can obtain the source code for the cube by either cloning the repository or downloading a zip file from the green Code button on the [Github page](https://github.com/Blinky-Lite-Exchange/blinky-bus-cube).
-<img src="/assets/images/blinky-cube-img/blinkyBusCube.jpg"/><br>
+<img src="{{ site.urlimg }}blinky-cube-img/blinkyBusCube.jpg"/><br>
 
 ## Building the circuit
 The project can be easily built on a breadboard, The components required are:
@@ -28,7 +28,7 @@ The project can be easily built on a breadboard, The components required are:
 * One [Solderless Breadboard  with 400 tie-points](https://www.electrokit.com/en/product/solderless-breadboard-400-tie-points/)
 
 Wire the circuit up as shown:<br>
-<img src="/assets/images/blinky-cube-img/blinkyBusCubeFritzing.png"/><br>
+<img src="{{ site.urlimg }}blinky-cube-img/blinkyBusCubeFritzing.png"/><br>
 
 ## Setting up the Bluetooth
 We will use the [Arduino Programming environment](https://www.arduino.cc/en/software) to program the Teensy-LC. In addition to the Arduino programming environment, you will need to install [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
@@ -40,13 +40,13 @@ This step can be skipped if you are going to use 9600 baud without a pin code. H
 The baud rate, pin code, and name of the HC06 are setup in the sketch contained in the folder HC06-Setup.The HC06 Bluetooth module is connected to the Serial1 port. The default baud rate of the HC06 is 9600. The baud rate on line 24 of the sketch must match this baud rate. For most Blinky-Lite applications, a baud rate of 19200 is sufficient and this is set on line 5 of the sketch. The user can choose any pin or name as long it is only 4 characters long.
 
 Open the Arduino programming environment serial monitor before loading the sketch. Choose the correct board and port under the Tools menu and load the HC06-Setup sketch. If successful, the output of the serial monitor will look like:<br>
-<img src="/assets/images/blinky-cube-img/HC06SetupSerialMonitor.png"/><br>
+<img src="{{ site.urlimg }}blinky-cube-img/HC06SetupSerialMonitor.png"/><br>
 
 Once the HC06-Setup sketch is loaded onto the Teensy-LC, the HC06 Bluetooth module will only communicate at the baud rate defined on line 5 of the HC06-Setup sketch. Any further communication using the HC06-Setup sketch will require to set the baud rate appropriately on line 24.
 
 ## Code Discussion
 The operating code is contained in the cubeCode.ino sketch<br>
-<img width="100%" src="/assets/images/blinky-cube-img/cubeCode.png"/><br>
+<img width="100%" src="{{ site.urlimg }}blinky-cube-img/cubeCode.png"/><br>
 
 The baud rate is set on line 2 and must match the baud rate set in the HC06-Setup sketch. The commLEDPin sets the LED that will blink during communication exchanges between the cube and the tray.
 

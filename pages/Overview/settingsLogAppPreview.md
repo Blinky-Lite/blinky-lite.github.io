@@ -8,6 +8,6 @@ has_children: false
 ---
 # Settings Log
 The settings log shows the what cube values have been changed over a particular interval of time. Only cubes that a particular user has access to are displayed for that use. 
-<p align = "center"><img src = "/assets/images/settingsLog.png"></p>
+<p align = "center"><img src = "{{ site.urlimg }}settingsLog.png"></p>
 
 

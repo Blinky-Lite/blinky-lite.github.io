@@ -12,9 +12,9 @@ Every application in a Blinky-Lite project can have its own cascading style shee
 
 | Example 1 | Example 2 |
 |-----------|-----------|
-|[![](/assets/images/appBuilder/qvantumCrop.png)](/assets/images/appBuilder/qvantumCrop.png) | [![](/assets/images/appBuilder/ochamDashboard.png)](/assets/images/appBuilder/ochamDashboard.png)|
+|[![]({{ site.urlimg }}appBuilder/qvantumCrop.png)]({{ site.urlimg }}appBuilder/qvantumCrop.png) | [![]({{ site.urlimg }}appBuilder/ochamDashboard.png)]({{ site.urlimg }}appBuilder/ochamDashboard.png)|
 
 ## App Style Sheet JSON
-[![](/assets/images/styleSheetJson.png)](/assets/images/styleSheetJson.png)
+[![]({{ site.urlimg }}styleSheetJson.png)]({{ site.urlimg }}styleSheetJson.png)
 
 

@@ -27,7 +27,7 @@ has_children: false
 Blinky-Bus is a demonstration project on how to use Blinky-Lite with serial Bluetooth to communicate between the cube and tray. The function of the device is to turn on and off three LEDs. The Blinky-Lite tray software is written as a [Node-RED](https://nodered.org/) flow and can easily run on a Raspberry Pi.
 
 You can obtain the source code for the cube by either cloning the repository or downloading a zip file from the green Code button on the [Github page](https://github.com/Blinky-Lite/blinky-bus-tray).<br>
-<img src="/assets/images/blinky-tray-img/blinkyBusCube.jpg"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/blinkyBusCube.jpg"/><br>
 
 ## Preparing the Raspberry Pi
 [(contents)](#table-of-contents)<br>
@@ -160,13 +160,13 @@ Open a browser and enter into the address bar of the browser:
 
 where ***AAA.BBB.CCC.DDD*** is the IP address of the Raspberry Pi and **61880** is the uiPort specified in the settings.js file. The browser will display:
 
-<img src="/assets/images/blinky-tray-img/node-red-splash.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/node-red-splash.png"/><br>
 
 ## Fixing the MQTT credentials
 [(contents)](#table-of-contents)<br>
 Enter the username and password defined in the adminAuth block of settings.js You will most likely see the following screen with an error message that the credentials could not be decrypted
 
-<img src="/assets/images/blinky-tray-img/node-red-cred-error.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/node-red-cred-error.png"/><br>
 
 Close the error message and on the right hand side of the screen is an info panel.
 * Expand the **Global Configuration Nodes** tree item,
@@ -177,14 +177,14 @@ Close the error message and on the right hand side of the screen is an info pane
   - $(MQTTUSERNAME) in the Username box
   - $(MQTTPASSWORD) in the Password box
 
-<img src="/assets/images/blinky-tray-img/Mqttsecurity.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/Mqttsecurity.png"/><br>
 
 * Press the **Update** button to close **Edit mqtt-broker node** panel
 * Press the **Deploy** button to load the flow.
 
 The flow should be working with green boxes underneath the light purple MQTT nodes indicating that they are connected.
 
-<img src="/assets/images/blinky-tray-img/noderedWorking.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/noderedWorking.png"/><br>
 
 ## Starting the PM2 background process
 [(contents)](#table-of-contents)<br>
@@ -211,7 +211,7 @@ Paste and execute the command. Now the tray will start automatically on boot.
 [(contents)](#table-of-contents)<br>
 The purpose of the Blinky-Lite tray is to package the data coming from the cube and send this data to the application box. Instead of sending many name-value pairs, the tray packages all of the cube data into a single [JSON object](https://www.w3schools.com/js/js_json_objects.asp). The definition of the tray JSON object is defined in the **tray.json** file.
 
-<img src="/assets/images/blinky-tray-img/trayJson.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/trayJson.png"/><br>
 
 * Trays with the same **type** should behave the same way.
 * The **name** value distinguishes trays of the same **type**
@@ -240,7 +240,7 @@ In the Node-RED flow there are three nodes where the user can customize how the 
 * Init Gizmo node
 
 These nodes are easily identified with a purple background and a yellow *Edit Me* label.
-<img src="/assets/images/blinky-tray-img/userNodes.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/userNodes.png"/><br>
 
 #### Create Settings Node
 [(contents)](#table-of-contents)<br>
@@ -259,7 +259,7 @@ For the setting process the MQTT payload must be of the form
     {cube:cube_name, value:x}
 
 where ***x*** is an number or a string. The user must edit the **Create Setting** node to setup up the behavior of the setting as shown below.
-<img src="/assets/images/blinky-tray-img/CreateSettingNodeCode.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/CreateSettingNodeCode.png"/><br>
 
 The settings can be of two types:
 * blinkyBus settings
@@ -273,9 +273,9 @@ The settings can be of two types:
 #### Create Readings node
 [(contents)](#table-of-contents)<br>
 The Create Readings node takes data from BlinkyBus and populates the tray cub objects.
-<img src="/assets/images/blinky-tray-img/CreateReadingsNodeCode.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/CreateReadingsNodeCode.png"/><br>
 
 #### Init Gizmo node
 [(contents)](#table-of-contents)<br>
 If the cube device returns a state value of 1, such as when the cube device is powered up, this node will be triggered and the node defines how the cube device should be initially configured
-<img src="/assets/images/blinky-tray-img/InitGizmoNodeCode.png"/><br>
+<img src="{{ site.urlimg }}blinky-tray-img/InitGizmoNodeCode.png"/><br>

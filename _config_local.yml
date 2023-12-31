@@ -10,6 +10,8 @@ favicon_ico: "/assets/images/favicon.ico"
 color_scheme: blinky
 footer_content: "Distributed by an <a href=\"https://raw.githubusercontent.com/Blinky-Lite/blinky-lite-box/master/LICENSE\">MIT license.</a>"
 
+urlimg: 	'/docs/assets/images/'
 
 aux_links:
-  Blinky-Lite on GitHub: https://github.com/Blinky-Lite
+  blinky-lite.org: https://www.blinky-lite.org/
+  GitHub: https://github.com/Blinky-Lite

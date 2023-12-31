@@ -20,7 +20,7 @@ The **Blinky-Lite** Architecture consists of three major components:
 - Message Trays
 - Controller Cubes
 
-<p align = "center"><img src = "/assets/images/architecture.jpg"></p>
+<p align = "center"><img src = "{{ site.urlimg }}architecture.jpg"></p>
 <p align = "center">Fig. 1 Blinky-Lite Architecture</p>
 
 ## The Application Box  
@@ -46,7 +46,7 @@ The Application Box is comprised of three services, the MQTT Broker, the Applica
     - for the user to change the code
     - to version control the code
     - to port the code to other machines
-    <p align = "center"><img src = "/assets/images/nodeRedEnv.png"></p>
+    <p align = "center"><img src = "{{ site.urlimg }}nodeRedEnv.png"></p>
     <p align = "center">Fig. 2 Node-RED Programming Environment</p>
 
 - ### The Database Server

@@ -13,24 +13,24 @@ The [Cube Explorer](/pages/Overview/cubeExplorerAppPreview.html) app is an all p
 
 | Example 1 | Example 2 |
 |-----------|-----------|
-|[![](/assets/images/appBuilder/qvantumCrop.png)](/assets/images/appBuilder/qvantumCrop.png) | [![](/assets/images/appBuilder/ochamDashboard.png)](/assets/images/appBuilder/ochamDashboard.png)|
+|[![]({{ site.urlimg }}appBuilder/qvantumCrop.png)]({{ site.urlimg }}appBuilder/qvantumCrop.png) | [![]({{ site.urlimg }}appBuilder/ochamDashboard.png)]({{ site.urlimg }}appBuilder/ochamDashboard.png)|
 
 ## Application Builder Widget Library  
 
 | Widget | Example | Configuration |  
 |:-------|-------- |---------------|
-| Nav Bar | [![](/assets/images/appBuilder/headerWidget.png)](/assets/images/appBuilder/headerWidget.png) |[![](/assets/images/appBuilder/headerConfig.png)](/assets/images/appBuilder/headerConfig.png) |
-| Number Read | [![](/assets/images/appBuilder/numberReadWidget.png)](/assets/images/appBuilder/numberReadWidget.png) |[![](/assets/images/appBuilder/numberReadConfig.png)](/assets/images/appBuilder/numberReadConfig.png) |
-| Number Set | [![](/assets/images/appBuilder/numberSetWidget.png)](/assets/images/appBuilder/numberSetWidget.png) |[![](/assets/images/appBuilder/numberSetConfig.png)](/assets/images/appBuilder/numberSetConfig.png) |
-| On-Off | [![](/assets/images/appBuilder/onOffWidget.png)](/assets/images/appBuilder/onOffWidget.png) |[![](/assets/images/appBuilder/onOffConfig.png)](/assets/images/appBuilder/onOffConfig.png) |
-| Image Reading | [![](/assets/images/appBuilder/imageReadingWidget.png)](/assets/images/appBuilder/imageReadingWidget.png) |[![](/assets/images/appBuilder/imageReadingConfig.png)](/assets/images/appBuilder/imageReadingConfig.png) |
-| State Choice | [![](/assets/images/appBuilder/stateChoiceWidget.png)](/assets/images/appBuilder/stateChoiceWidget.png) |[![](/assets/images/appBuilder/stateChoiceConfig.png)](/assets/images/appBuilder/stateChoiceConfig.png) |
-| Gauge | [![](/assets/images/appBuilder/gaugeWidget.png)](/assets/images/appBuilder/gaugeWidget.png) |[![](/assets/images/appBuilder/gaugeConfig.png)](/assets/images/appBuilder/gaugeConfig.png) |
-| Horz. Bar | [![](/assets/images/appBuilder/hbarWidget.png)](/assets/images/appBuilder/hbarWidget.png) |[![](/assets/images/appBuilder/hbarConfig.png)](/assets/images/appBuilder/hbarConfig.png) |
-| Archive | [![](/assets/images/appBuilder/archiveWidget.png)](/assets/images/appBuilder/archiveWidget.png) |[![](/assets/images/appBuilder/archiveConfig.png)](/assets/images/appBuilder/archiveConfig.png) |
-| Time Plot | [![](/assets/images/appBuilder/timePlotWidget.png)](/assets/images/appBuilder/timePlotWidget.png) |[![](/assets/images/appBuilder/timePlotConfig.png)](/assets/images/appBuilder/timePlotConfig.png) |
-| Iframe | [![](/assets/images/appBuilder/iframeWidget.png)](/assets/images/appBuilder/iframeWidget.png) |[![](/assets/images/appBuilder/iframeConfig.png)](/assets/images/appBuilder/iframeConfig.png) |
-| User | [![](/assets/images/appBuilder/userWidget.png)](/assets/images/appBuilder/userWidget.png) |[![](/assets/images/appBuilder/userConfig.png)](/assets/images/appBuilder/userConfig.png) |
+| Nav Bar | [![]({{ site.urlimg }}appBuilder/headerWidget.png)]({{ site.urlimg }}appBuilder/headerWidget.png) |[![]({{ site.urlimg }}appBuilder/headerConfig.png)]({{ site.urlimg }}appBuilder/headerConfig.png) |
+| Number Read | [![]({{ site.urlimg }}appBuilder/numberReadWidget.png)]({{ site.urlimg }}appBuilder/numberReadWidget.png) |[![]({{ site.urlimg }}appBuilder/numberReadConfig.png)]({{ site.urlimg }}appBuilder/numberReadConfig.png) |
+| Number Set | [![]({{ site.urlimg }}appBuilder/numberSetWidget.png)]({{ site.urlimg }}appBuilder/numberSetWidget.png) |[![]({{ site.urlimg }}appBuilder/numberSetConfig.png)]({{ site.urlimg }}appBuilder/numberSetConfig.png) |
+| On-Off | [![]({{ site.urlimg }}appBuilder/onOffWidget.png)]({{ site.urlimg }}appBuilder/onOffWidget.png) |[![]({{ site.urlimg }}appBuilder/onOffConfig.png)]({{ site.urlimg }}appBuilder/onOffConfig.png) |
+| Image Reading | [![]({{ site.urlimg }}appBuilder/imageReadingWidget.png)]({{ site.urlimg }}appBuilder/imageReadingWidget.png) |[![]({{ site.urlimg }}appBuilder/imageReadingConfig.png)]({{ site.urlimg }}appBuilder/imageReadingConfig.png) |
+| State Choice | [![]({{ site.urlimg }}appBuilder/stateChoiceWidget.png)]({{ site.urlimg }}appBuilder/stateChoiceWidget.png) |[![]({{ site.urlimg }}appBuilder/stateChoiceConfig.png)]({{ site.urlimg }}appBuilder/stateChoiceConfig.png) |
+| Gauge | [![]({{ site.urlimg }}appBuilder/gaugeWidget.png)]({{ site.urlimg }}appBuilder/gaugeWidget.png) |[![]({{ site.urlimg }}appBuilder/gaugeConfig.png)]({{ site.urlimg }}appBuilder/gaugeConfig.png) |
+| Horz. Bar | [![]({{ site.urlimg }}appBuilder/hbarWidget.png)]({{ site.urlimg }}appBuilder/hbarWidget.png) |[![]({{ site.urlimg }}appBuilder/hbarConfig.png)]({{ site.urlimg }}appBuilder/hbarConfig.png) |
+| Archive | [![]({{ site.urlimg }}appBuilder/archiveWidget.png)]({{ site.urlimg }}appBuilder/archiveWidget.png) |[![]({{ site.urlimg }}appBuilder/archiveConfig.png)]({{ site.urlimg }}appBuilder/archiveConfig.png) |
+| Time Plot | [![]({{ site.urlimg }}appBuilder/timePlotWidget.png)]({{ site.urlimg }}appBuilder/timePlotWidget.png) |[![]({{ site.urlimg }}appBuilder/timePlotConfig.png)]({{ site.urlimg }}appBuilder/timePlotConfig.png) |
+| Iframe | [![]({{ site.urlimg }}appBuilder/iframeWidget.png)]({{ site.urlimg }}appBuilder/iframeWidget.png) |[![]({{ site.urlimg }}appBuilder/iframeConfig.png)]({{ site.urlimg }}appBuilder/iframeConfig.png) |
+| User | [![]({{ site.urlimg }}appBuilder/userWidget.png)]({{ site.urlimg }}appBuilder/userWidget.png) |[![]({{ site.urlimg }}appBuilder/userConfig.png)]({{ site.urlimg }}appBuilder/userConfig.png) |
 
 
 
