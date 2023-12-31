@@ -5,7 +5,7 @@ parent: Overview
 nav_order: 1
 ---
 # Blinky-Lite Features
-- ## Mobility!
+- ## Mobility
   Most other control platforms sit behind a firewall and remote access is an afterthought. Not with **Blinky-Lite**. Secure remote access was the paramount requirement from the start. All **Blinky-Lite** applications are web apps that can be securely accessed from anywhere in the world. Web apps require no installation and you are always guaranteed to get the latest version. 
 - ## Security
   **Blinky-Lite** connections are always initiated from within your facility, not from the outside, providing secure information flow from you to the machine/sensor and back. All **Blinky-Lite** mobile apps require two factor authentication, ensuring that only the right people have access.

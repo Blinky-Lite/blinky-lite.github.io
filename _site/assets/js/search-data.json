@@ -287,7 +287,7 @@
     "relUrl": "/pages/Overview/features.html#blinky-lite-features"
   },"41": {
     "doc": "Features",
-    "title": "Mobility!",
+    "title": "Mobility",
     "content": "Most other control platforms sit behind a firewall and remote access is an afterthought. Not with Blinky-Lite. Secure remote access was the paramount requirement from the start. All Blinky-Lite applications are web apps that can be securely accessed from anywhere in the world. Web apps require no installation and you are always guaranteed to get the latest version. | ",
     "url": "/docs/pages/Overview/features.html#mobility",
     
