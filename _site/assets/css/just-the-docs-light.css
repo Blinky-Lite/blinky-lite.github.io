@@ -847,7 +847,7 @@ blockquote {
 .site-logo {
   width: 100%;
   height: 100%;
-  background-image: url("/assets/images/project-logo.png");
+  background-image: url("/docs/assets/images/project-logo.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
