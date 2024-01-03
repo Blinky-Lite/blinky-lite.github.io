@@ -7,71 +7,69 @@ nav_order: 1
 ---
 # Application Server
 
-The Application Server (or Blinky-Lite Box) requires [MongoDB] and [MQTT] as services which can be difficult to install so we have bundled the Blinky-Lite Box in a [Docker container]. Then we have developed Docker Compose yaml files for retrieving and starting the Blinky-Lite Box with all the required services. The [Docker Engine] is easily installed on Linux systems. For operating systems other than Linux you will need to use [Docker Desktop].
+View [YouTube Version](https://youtu.be/PBt12n2DdvQ?si=hpjZuT06hNWH97LQ)
 
-### Usage
+This tutorial will show you how to install Blinky-Lite on a [Ubuntu Server](https://ubuntu.com/download/server) that is installed on amd64 or x86_64. The server should have at least 2048MB of memory and 20GB of disk space.
 
-Download zipped  blinky-lite-box [docker compose file] template. The file will unzip into a directory. Enter the directory and edit the .env file with settings of your choosing. 
+## Installing Portainer
+Blinky-Lite is composed of a number of Docker containers. We use a web based tool called [Portainer](https://www.portainer.io/) to install and orchestrate the containers. From a terminal on your application server, retrieve the Blinky-Lite Portainer installation script
 
-#### Environment Variables
+<code>wget https://raw.githubusercontent.com/Blinky-Lite/blinky-compose/main/scripts/installDockerPortainer.sh</code>
 
-* `BLINKYLITE_PASSWORD` - password for the MongoDB database
-* `JWTKEYSECRET` - key for the JWT security 
-* `NEXMOAPIKEY` - Vonnage sms API key[^1]
-* `NEXMOAPISECRET` - Vonnage sms API secret[^1]
-* `MAXDBSIZE` - Maximum size of the MongoDB database in bytes
-* `BLINKYPORT` - IP port of the Blinky-Lite Web application
-* `EXPRESSPORT` - IP port of the MongoDB Express Web application
-* `MQTTPORT` - IP port of MQTT communications which is usually set to 1883
-* `TWOFA` - Two factor authentication flag, 0 for disable, 1 for enable
-* `ENABLEARCHIVE` - Enable archiving flag. 0 for disable, 1 for enable
+Give the script execution privileges
 
-#### Starting the containers
+<code>chmod +x installDockerPortainer.sh</code>
 
-From a command line, enter the blinky-box-docker directory that you just unzipped and enter:
+Run the script and supply a password for administering the Portainer web app. The password must be at least 12 characters long. 
 
-```shell
-docker compose -f blinky-box.yaml up -d
-```
+<code>./installDockerPortainer.sh <i>doNotUseThisPassword</i></code>
 
-On the first run, Docker will have to pull a number of images that will take some time. Once the containers have spun up you can see the Blinky-Lite application and the database application on localhost on the ports specified in the .env file.
+The script will take a while to execute and give a message
 
-#### Adding MQTT Passwords
-The script `add-mqtt-pw.sh` can be used for adding  mqtt credentials. The usage is:
+<i>...Finished installing docker..serving Portainer on port 9000</i>
 
-```shell
-./add-mqtt-pw.sh <username> <password>
-```
+when complete.
 
-This script will restart the MQTT container to load the new credentials.
+## Download blinky-compose 
+Now open a browser that is on the same network as the Ubuntu server. 
+- Navigate to the [blinky-compose repository](https://github.com/Blinky-Lite/blinky-compose ). 
+- Click the green Code button and select the Download zip option at the bottom of the dialog window. 
+- After the zip file has been downloaded, go to your download folder and extract the zip file. 
 
-To remove passwords, edit the `pwfile` in the `mqtt-auth` folder and then restart the mqtt container with the `restart-mqtt.sh` script.  To restart the MQTT container, go to a command line in the `blinky-box-docker` directory and enter:
+## Configure the blinky-Lite stack
+Return to your web browser and in the address bar enter the IP address of your Ubuntu server followed by a :9000 to navigate to the Portainer web app.
+- The username for Portainer is admin and the password is what you entered during the installation script. 
+- Click on the "Get Started" button and then click on the Docker icon to reach the Docker dashboard. 
+- From the Docker dashboard click on the "stacks" button. 
+- Press the blue "Add Stack" button and enter the name for your Blinky-Lite stack. 
+- It is recommended to use blinky-lite as the stack name. 
+- Click on the upload option and then under the upload section, press the Select file button. 
+- Navigate to your download directory and open the blinky-compose-main directory that you extracted. 
+- Select the blinky-lite.yaml file. 
+- Next, select the "Load variables from env file" button and navigate to the download directory. 
+- Navigate to the env directory and select the blinky-lite.env file. 
+### Configure the Blinky-Lite env variables
+Fill in the environmental variables into the table as shown. 
 
-```shell
-./restart-mqtt-pw.sh
-```
+* `DOCKER_TAG` - Enter `amd64` for now. More choices in the future
+* `BLINKYLITE_PASSWORD` - same password as you used for the portainer app
+* `BOX` - name of your blinky-lite box eg. my-blinky-box-01
+* `REMOTE_MQTTSERVER` - Enter `none`. Since this is an introductory tutorial we will not use an external MQTT broker as a bridge
+* `REMOTE_MQTTUSER` - Enter `none`
+* `REMOTE_MQTTPASSWORD` - Enter `none`
+* `HUB` - Enter `blinky-hub`
+* `EXTRA_HUB_TOPIC1` - Enter `none`
+* `JWTKEYSECRET` - Used to encrypt communications between the client web apps and the server.
+* `MAXDBSIZE` - The maximum size of the database in bytes. 4500000000 is a good size to start.
+* `TWOFA` - The two factor authentication flag.  
 
-#### Adding MQTT Access Control List (ACL) Rules
+## Starting the blinky-lite stack
+At the bottom of the stack configuration web page, press the blue deploy the stack button. It will take some time to deploy the stack because all the necessary docker containers need to be imported.  Once the stack has been deployed, you will see blinky-lite show up on the stacks list.  
 
-In the `mqtt-auth` folder, edit the `aclfile` file. There are examples already in place. After editing the file, restart the mqtt container with the `restart-mqtt.sh` script as descirbed above.
+Blinky-Lite will be served on port 80 of the Ubuntu server. Because blinky-lite implements an nginx reverse proxy server, you can also reach the Portainer web application by entering portainer after the server ip address. 
 
+## Viewing the Blinky-Lite database
+You can also edit the blinky-lite database by entering mongo-express after the server ip address. The user name for mongo-express is admin and the password is the same as the blinky-lite password you set when configuring the stack. You should only touch the blinky-lite database. 
 
-## Customization
-Blinky-Lite is fully customize-able. The home page of a Blinky-Lite box is a static web page the and is defined in the `index.html` file and the `homepage` folder inside the `blinky-box-docker` directory. 
+The blinky-lite database contains a number of mongo-db collections. For example, you can change user credentials and permissions in users collections.  You can set the color scheme of all the applications by adjusting the general app document. You can also adjust the look of the initial landing page. 
 
-Icons used in the Blinky-Lite applications can also be customized in the `blinky-lite-icons` folder inside the `blinky-box-docker` directory. 
-
-Most of the Blinky-Lite Box [services](/pages/Overview/features.html#services) are customized by editing the database. This can easily be done with the Mongo-Express server that was installed in the Docker Compose file that can be accessed at [http://localhost:xxxxx](http://localhost:8080) where xxxxx is defined by the `EXPRESSPORT` environmental variable. The username for the Mongo-Express server is **admin** and the password is defined by the `BLINKYLITE_PASSWORD` environmental variable. 
-
-## Accessing the Application Server
-The home page for the Application Server is at [http://localhost:yyyyy](http://localhost:60427) where yyyyy is defined by the `BLINKYPORT` environmental variable. You can access the application index page at [http://localhost:yyyyy/myapps](http://localhost:60427/myapps). The Docker image comes loaded with an example user **aeinstein** with a password **e=mcsquared**. You should delete this example user after you have deployed the application server.
-
-----
-[MongoDB]:https://www.mongodb.com/atlas/database  
-[MQTT]:https://mqtt.org  
-[Docker container]:https://hub.docker.com/r/blinkylite/blinky-lite-box  
-[Docker Engine]:https://docs.docker.com/engine/install  
-[Docker Desktop]:https://www.docker.com/products/docker-desktop/  
-[docker compose file]:https://github.com/Blinky-Lite/docker-templates/raw/master/blinky-box-docker.zip  
-[Vonnage]:https://www.vonage.com/communications-apis/sms/  
-[^1]:Blinky-Lite uses Nexmo or [Vonnage] for SMS alerts. It you do not have an SMS account with Vonnage, then leave the Nexmo variables alone.    
