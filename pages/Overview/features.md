@@ -18,7 +18,7 @@ nav_order: 1
 - ## Services
   Most other control platforms only offer a communication protocol, but **Blinky-Lite** out of the box provides:
   - Alarm Scanning
-  - SMS Alarm messaging
+  - Publish-Subscribe and SMS Alarm messaging
   - Data Logging
   - Access Logging
   - Settings Logging

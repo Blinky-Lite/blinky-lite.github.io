@@ -3,7 +3,7 @@ title: App Authentication
 layout: default
 parent: App Overview
 grand_parent: Overview
-nav_order: 8
+nav_order: 9
 has_children: false
 ---
 # App Authentication

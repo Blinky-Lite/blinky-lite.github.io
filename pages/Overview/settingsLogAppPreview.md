@@ -3,7 +3,7 @@ title: Settings Log App
 layout: default
 parent: App Overview
 grand_parent: Overview
-nav_order: 5
+nav_order: 6
 has_children: false
 ---
 # Settings Log
