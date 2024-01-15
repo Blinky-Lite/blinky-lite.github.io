@@ -260,7 +260,7 @@
   },"37": {
     "doc": "Logbook App",
     "title": "Logbook",
-    "content": "For streamlined functionality, the logbook is text-only. We believe that commercial note taking applications should be used for image capturing. Since all settings are logged, the purpose of the logbook application is to serve as a forum to explain rationale behind changes to the control system parameters. Logbook entries can be searched by date and author. Additions or changes to the logbook are sent to the NTFY system with the following formats . | logbook | logbook-author | logbook-author-action where actions are: . | added | edited | deleted | . | . Logbook Application . Logbook Entry . ",
+    "content": "For streamlined functionality, the logbook is text-only*. Since all settings are logged, the purpose of the logbook application is to serve as a forum to explain rationale behind changes to the control system parameters. Logbook entries can be searched by date and author. Additions or changes to the logbook are sent to the NTFY system with the following formats . | logbook | logbook-author | logbook-author-action where actions are: . | added | edited | deleted | . | . *We believe that commercial note taking applications should be used for image capturing instead. Logbook Application . Logbook Entry . ",
     "url": "/docs/pages/Overview/logbookAppPreview.html#logbook",
     
     "relUrl": "/pages/Overview/logbookAppPreview.html#logbook"
