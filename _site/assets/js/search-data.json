@@ -92,7 +92,7 @@
   },"13": {
     "doc": "Application Server",
     "title": "Application Server",
-    "content": "View YouTube Version . This tutorial will show you how to install Blinky-Lite on a Ubuntu Server that is installed on amd64 or x86_64. The server should have at least 2048MB of memory and 20GB of disk space. ",
+    "content": "This tutorial will show you how to install Blinky-Lite on a Ubuntu Server that is installed on amd64 or x86_64. The server should have at least 2048MB of memory and 20GB of disk space. ",
     "url": "/docs/pages/Installation/appServerInstall.html",
     
     "relUrl": "/pages/Installation/appServerInstall.html"

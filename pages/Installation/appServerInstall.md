@@ -7,7 +7,9 @@ nav_order: 1
 ---
 # Application Server
 
-View [YouTube Version](https://youtu.be/PBt12n2DdvQ?si=hpjZuT06hNWH97LQ)
+<div style="position: relative; padding-bottom: 56.25%;height: 0px;">
+    <iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" frameborder="0" allowfullscreen="" src="https://player.vimeo.com/video/906812514?dnt=1"></iframe>
+</div>
 
 This tutorial will show you how to install Blinky-Lite on a [Ubuntu Server](https://ubuntu.com/download/server) that is installed on amd64 or x86_64. The server should have at least 2048MB of memory and 20GB of disk space.
 
