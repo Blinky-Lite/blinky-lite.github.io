@@ -7,31 +7,42 @@ nav_order: 2
 has_children: false
 ---
 # Application Builder
-The [Cube Explorer](/pages/Overview/cubeExplorerAppPreview.html) app is an all purpose app for displaying and setting data in the control system. However, sometimes, the user would like to build a consist custom dashboard application. Building event driven controls applications can be quite complicated so Blinky-Lite has an application builder that makes it easy for the user to build his own custom dashboard application without having to do any programming. The user just configures a JSON file. The application builder has a basic library of widgets based on [Boostrap 4 cards](https://getbootstrap.com/docs/4.0/components/card/). This widget library is easily extensible to more widgets. The widgets are configured with a JSON object that is stored in the Blinky-Lite database as shown in the [widget examples]({{ site.baseurl}}/pages/Overview/appBuilderPreview.html#application-builder-widget-library).  
+The [Cube Explorer](/pages/Overview/cubeExplorerAppPreview.html) app is an all purpose app for displaying and setting data in the control system. However, sometimes, the user would like to build a consist custom dashboard application. Building event driven controls applications can be quite complicated so Blinky-Lite has an application builder that makes it easy for the user to build his own custom dashboard application without having to do any programming. 
 
-## Application Builder Examples
+![]({{ site.urlimg }}appBuilder/widgets.png)
 
-| Example 1 | Example 2 |
-|-----------|-----------|
-|[![]({{ site.urlimg }}appBuilder/qvantumCrop.png)]({{ site.urlimg }}appBuilder/qvantumCrop.png) | [![]({{ site.urlimg }}appBuilder/ochamDashboard.png)]({{ site.urlimg }}appBuilder/ochamDashboard.png)|
+The user just configures a JSON file. An example file is shown [below]({{site.baseurl}}/pages/Overview/appBuilderPreview.html#sample-application-builder-json-file). The application builder has a basic library of widgets based on [Boostrap 4 cards](https://getbootstrap.com/docs/4.0/components/card/). This widget library is easily extensible to more widgets. 
 
-## Application Builder Widget Library  
+## Application Builder Cards
+Cards can be arranged in an order and the can be more than one CubeRowCard. There are currently nine different types of cards. 
 
-| Widget | Example | Configuration |  
-|:-------|-------- |---------------|
-| Nav Bar | [![]({{ site.urlimg }}appBuilder/headerWidget.png)]({{ site.urlimg }}appBuilder/headerWidget.png) |[![]({{ site.urlimg }}appBuilder/headerConfig.png)]({{ site.urlimg }}appBuilder/headerConfig.png) |
-| Number Read | [![]({{ site.urlimg }}appBuilder/numberReadWidget.png)]({{ site.urlimg }}appBuilder/numberReadWidget.png) |[![]({{ site.urlimg }}appBuilder/numberReadConfig.png)]({{ site.urlimg }}appBuilder/numberReadConfig.png) |
-| Number Set | [![]({{ site.urlimg }}appBuilder/numberSetWidget.png)]({{ site.urlimg }}appBuilder/numberSetWidget.png) |[![]({{ site.urlimg }}appBuilder/numberSetConfig.png)]({{ site.urlimg }}appBuilder/numberSetConfig.png) |
-| On-Off | [![]({{ site.urlimg }}appBuilder/onOffWidget.png)]({{ site.urlimg }}appBuilder/onOffWidget.png) |[![]({{ site.urlimg }}appBuilder/onOffConfig.png)]({{ site.urlimg }}appBuilder/onOffConfig.png) |
-| Image Reading | [![]({{ site.urlimg }}appBuilder/imageReadingWidget.png)]({{ site.urlimg }}appBuilder/imageReadingWidget.png) |[![]({{ site.urlimg }}appBuilder/imageReadingConfig.png)]({{ site.urlimg }}appBuilder/imageReadingConfig.png) |
-| State Choice | [![]({{ site.urlimg }}appBuilder/stateChoiceWidget.png)]({{ site.urlimg }}appBuilder/stateChoiceWidget.png) |[![]({{ site.urlimg }}appBuilder/stateChoiceConfig.png)]({{ site.urlimg }}appBuilder/stateChoiceConfig.png) |
-| Gauge | [![]({{ site.urlimg }}appBuilder/gaugeWidget.png)]({{ site.urlimg }}appBuilder/gaugeWidget.png) |[![]({{ site.urlimg }}appBuilder/gaugeConfig.png)]({{ site.urlimg }}appBuilder/gaugeConfig.png) |
-| Horz. Bar | [![]({{ site.urlimg }}appBuilder/hbarWidget.png)]({{ site.urlimg }}appBuilder/hbarWidget.png) |[![]({{ site.urlimg }}appBuilder/hbarConfig.png)]({{ site.urlimg }}appBuilder/hbarConfig.png) |
-| Archive | [![]({{ site.urlimg }}appBuilder/archiveWidget.png)]({{ site.urlimg }}appBuilder/archiveWidget.png) |[![]({{ site.urlimg }}appBuilder/archiveConfig.png)]({{ site.urlimg }}appBuilder/archiveConfig.png) |
-| Time Plot | [![]({{ site.urlimg }}appBuilder/timePlotWidget.png)]({{ site.urlimg }}appBuilder/timePlotWidget.png) |[![]({{ site.urlimg }}appBuilder/timePlotConfig.png)]({{ site.urlimg }}appBuilder/timePlotConfig.png) |
-| Iframe | [![]({{ site.urlimg }}appBuilder/iframeWidget.png)]({{ site.urlimg }}appBuilder/iframeWidget.png) |[![]({{ site.urlimg }}appBuilder/iframeConfig.png)]({{ site.urlimg }}appBuilder/iframeConfig.png) |
-| User | [![]({{ site.urlimg }}appBuilder/userWidget.png)]({{ site.urlimg }}appBuilder/userWidget.png) |[![]({{ site.urlimg }}appBuilder/userConfig.png)]({{ site.urlimg }}appBuilder/userConfig.png) |
+- [CubeRowCard]({{ site.urlimg }}appBuilder/cubeRows.png) 
+- [BarPlotCard]({{ site.urlimg }}appBuilder/barPlot.png)
+- [TimePlotCard]({{ site.urlimg }}appBuilder/timePlot.png)
+- [ArchivePlotCard]({{ site.urlimg }}appBuilder/archivePlot.png)
+- [VectorPlotCard]({{ site.urlimg }}appBuilder/vectorPlot.png)
+- [IframeCard]({{ site.urlimg }}appBuilder/iframePlot.png)
+- [UserCard]({{ site.urlimg }}appBuilder/userCard.png)
+- [CustomCard]
 
+## Application Builder CubeRowCard Widgets
+For the CubeRowCard there are 13  widgets defined.
+
+- [GaugeCube]({{ site.urlimg }}appBuilder/gaugePlots.png)
+- [HbarCube]({{ site.urlimg }}appBuilder/gaugePlots.png)
+- [UrlLaunchCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [TextReadCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [TextSetCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [NumberReadCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [TimeStampReadCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [OnOffSetCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [ImageReadCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [LabelReadCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [SettingIncrCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [StateChoiceCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+- [DropChoiceCube]({{ site.urlimg }}appBuilder/cubeRows.png)
+
+## Sample Application Builder JSON file
 <pre>
 <code>
 {
@@ -101,7 +112,7 @@ The [Cube Explorer](/pages/Overview/cubeExplorerAppPreview.html) app is an all p
                             trayIndex: 0,
                             cubeName: 'led1',
                             cubeLabel: 'Blue LED  <i style=\\"color:var(--color6);font-size:15px;\\">(OnOffSetCube)</i>',
-                            onColor: '#0000ff',
+                            ocubeRownColor: '#0000ff',
                             offColor: '#e6e6ff',
                             middleColor: '#c825ff',
                             limits: [
@@ -129,7 +140,7 @@ The [Cube Explorer](/pages/Overview/cubeExplorerAppPreview.html) app is an all p
                         }
                     },
                     {
-                        type: 'LabelReadCube',
+                        type:cubeRow 'LabelReadCube',
                         config: {
                             trayIndex: 0,
                             cubeName: 'led1',
@@ -159,7 +170,7 @@ The [Cube Explorer](/pages/Overview/cubeExplorerAppPreview.html) app is an all p
                             cubeLabel: 'Blue LED  <i style=\\"color:var(--color6);font-size:15px;\\">(SettingIncrCube)</i>',
                             increment: 5
                         }
-                    },
+                    },cubeRow
                     {
                         type: 'StateChoiceCube',
                         config: {
@@ -189,7 +200,7 @@ The [Cube Explorer](/pages/Overview/cubeExplorerAppPreview.html) app is an all p
                     },
                     {
                         type: 'DropChoiceCube',
-                        config: {
+                        conficubeRowg: {
                             trayIndex: 0,
                             cubeName: 'led1',
                             cubeLabel: 'Blue LED  <i style=\\"color:var(--color6);font-size:15px;\\">(DropChoiceCube)</i>',
@@ -199,7 +210,7 @@ The [Cube Explorer](/pages/Overview/cubeExplorerAppPreview.html) app is an all p
                                     color: '#e6e6ff',
                                     text: 'Off'
                                 },
-                                {
+                             cubeRow   {
                                     value: 125,
                                     color: '#c825ff',
                                     text: 'Mood'

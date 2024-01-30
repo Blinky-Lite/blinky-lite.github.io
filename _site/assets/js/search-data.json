@@ -57,270 +57,277 @@
   },"8": {
     "doc": "Application Builder",
     "title": "Application Builder",
-    "content": "The Cube Explorer app is an all purpose app for displaying and setting data in the control system. However, sometimes, the user would like to build a consist custom dashboard application. Building event driven controls applications can be quite complicated so Blinky-Lite has an application builder that makes it easy for the user to build his own custom dashboard application without having to do any programming. The user just configures a JSON file. The application builder has a basic library of widgets based on Boostrap 4 cards. This widget library is easily extensible to more widgets. The widgets are configured with a JSON object that is stored in the Blinky-Lite database as shown in the widget examples. ",
+    "content": "The Cube Explorer app is an all purpose app for displaying and setting data in the control system. However, sometimes, the user would like to build a consist custom dashboard application. Building event driven controls applications can be quite complicated so Blinky-Lite has an application builder that makes it easy for the user to build his own custom dashboard application without having to do any programming. The user just configures a JSON file. An example file is shown below. The application builder has a basic library of widgets based on Boostrap 4 cards. This widget library is easily extensible to more widgets. ",
     "url": "/docs/pages/Overview/appBuilderPreview.html",
     
     "relUrl": "/pages/Overview/appBuilderPreview.html"
   },"9": {
     "doc": "Application Builder",
-    "title": "Application Builder Examples",
-    "content": "| Example 1 | Example 2 | . | | | . ",
-    "url": "/docs/pages/Overview/appBuilderPreview.html#application-builder-examples",
+    "title": "Application Builder Cards",
+    "content": "Cards can be arranged in an order and the can be more than one CubeRowCard. There are currently nine different types of cards. | CubeRowCard | BarPlotCard | TimePlotCard | ArchivePlotCard | VectorPlotCard | IframeCard | UserCard | [CustomCard] | . ",
+    "url": "/docs/pages/Overview/appBuilderPreview.html#application-builder-cards",
     
-    "relUrl": "/pages/Overview/appBuilderPreview.html#application-builder-examples"
+    "relUrl": "/pages/Overview/appBuilderPreview.html#application-builder-cards"
   },"10": {
     "doc": "Application Builder",
-    "title": "Application Builder Widget Library",
-    "content": "| Widget | Example | Configuration | . | Nav Bar | | | . | Number Read | | | . | Number Set | | | . | On-Off | | | . | Image Reading | | | . | State Choice | | | . | Gauge | | | . | Horz. Bar | | | . | Archive | | | . | Time Plot | | | . | Iframe | | | . | User | | | . { allowedRoles: [ 'app02', 'appView' ], app: 'app02', cards: [ { type: 'CubeRowCard', config: { title: 'Status &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(CubeRowCard))&lt;/span&gt;', displayOnOpen: true, cubeRows: [ { type: 'UrlLaunchCube', config: { trayIndex: 0, cubeLabel: 'Home &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(UrlLaunchCube)&lt;/i&gt;', buttonLabel: 'Launch', url: '/' } }, { type: 'TextReadCube', config: { trayIndex: 0, cubeName: 'alias', cubeLabel: 'Device &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(TextReadCube)&lt;/i&gt;' } }, { type: 'TextSetCube', config: { trayIndex: 0, cubeName: 'alias', cubeLabel: 'Device &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(TextSetCube)&lt;/i&gt;' } }, { type: 'NumberReadCube', config: { trayIndex: 0, cubeName: 'watchdog', cubeLabel: 'Watchdog &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(NumberReadCube)&lt;/i&gt;' } }, { type: 'TimeStampReadCube', config: { trayIndex: 0, cubeLabel: 'Update &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(TimeStampReadCube)&lt;/i&gt;' } }, { type: 'NumberReadCube', config: { trayIndex: 0, cubeName: 'chipTemp', cubeLabel: 'Chip Temp &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(NumberReadCube)&lt;/i&gt;' } }, { type: 'OnOffSetCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(OnOffSetCube)&lt;/i&gt;', onColor: '#0000ff', offColor: '#e6e6ff', middleColor: '#c825ff', limits: [ 10, 240 ] } }, { type: 'ImageReadCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(ImageReadCube)&lt;/i&gt;', values: [ 10, 125, 240 ], images: [ '/img/blackLight.png', '/img/purpleLight.png', '/img/blueLight.png' ] } }, { type: 'LabelReadCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(LabelReadCube)&lt;/i&gt;', values: [ 10, 125, 240 ], labels: [ 'Off', 'Mood', 'On' ], colors: [ 'black', '#c825ff', 'blue' ] } }, { type: 'SettingIncrCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(SettingIncrCube)&lt;/i&gt;', increment: 5 } }, { type: 'StateChoiceCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(StateChoiceCube)&lt;/i&gt;', borderColor: 'black', borderWidth: 5, states: [ { value: 10, color: '#e6e6ff', text: 'Off' }, { value: 125, color: '#c825ff', text: 'Mood' }, { value: 240, color: '#0000ff', text: 'On' } ] } }, { type: 'DropChoiceCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(DropChoiceCube)&lt;/i&gt;', choices: [ { value: 10, color: '#e6e6ff', text: 'Off' }, { value: 125, color: '#c825ff', text: 'Mood' }, { value: 240, color: '#0000ff', text: 'On' } ] } }, { type: 'NumberSetCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(NumberSetCube)&lt;/i&gt;' } }, { type: 'NumberSetCube', config: { trayIndex: 0, cubeName: 'led2', cubeLabel: 'Red LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(NumberSetCube)&lt;/i&gt;' } } ] } }, { type: 'CubeRowCard', config: { title: 'Gauge Demo &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(CubeRowCard))&lt;/span&gt;', displayOnOpen: true, cubeRows: [ { type: 'SettingIncrCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: '', increment: 20 } }, { type: 'GaugeCube', config: { cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(GaugeCube)&lt;/i&gt;', trayIndex: 0, cubeName: 'led1', textsize: 20, lowColor: '#e6e6ff', mediumColor: '#c825ff', highColor: '#0000ff', backgroundColor: '#c6c2bb', labelColor: '#000000', round: 0, limits: [ 0, 80, 160, 250 ] } } ] } }, { type: 'CubeRowCard', config: { title: 'H Bar Demo &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(CubeRowCard))&lt;/span&gt;', displayOnOpen: true, cubeRows: [ { type: 'SettingIncrCube', config: { trayIndex: 0, cubeName: 'led2', cubeLabel: '', increment: 20 } }, { type: 'HbarCube', config: { cubeLabel: 'Red LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(HbarCube)&lt;/i&gt;', trayIndex: 0, cubeName: 'led2', textsize: 20, lowColor: '#ffe6e6', mediumColor: '#ff9900', highColor: '#ff0000', backgroundColor: '#c6c2bb', labelColor: '#000000', gridColor: '#ffffff', height: 150, round: 0, limits: [ 0, 80, 160, 250 ] } } ] } }, { type: 'BarPlotCard', config: { title: 'LED Strength &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(BarPlotCard))&lt;/span&gt;', displayOnOpen: true, orientation: 'h', cubeList: [ { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED', color: 'blue' }, { trayIndex: 0, cubeName: 'led2', cubeLabel: 'RED LED', color: 'red' } ], plotlyDisplay: { displayModeBar: true, staticPlot: false }, plotlyLayout: { showlegend: false, height: '400', width: '', yaxis: { tickfont: { size: 20 } }, xaxis: { title: 'LED Strength', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda', range: [ 0, 300 ] }, margin: { t: 30, l: 150, r: 200, b: 130 } } } }, { type: 'TimePlotCard', config: { title: 'Time Plot &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(TimePlotCard))&lt;/span&gt;', displayOnOpen: false, cubeList: [ [ { label: 'Chip Temp', name: 'chipTemp', color: 'green', yaxis: 'y1' }, { label: 'Watchdog', name: 'watchdog', color: 'blue', yaxis: 'y2' } ] ], plotlyDisplay: { displayModeBar: true, staticPlot: false }, plotlyLayout: { showlegend: true, legend: { x: 0, y: 1.15, font: { size: 20 } }, height: '600', width: '', xaxis: { type: 'date', tickangle: '90', tickfont: { size: 20 }, tickformat: '%H:%M\\\\n%b-%d' }, yaxis: { title: 'Temperature C', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda' }, yaxis2: { title: 'Watchdog', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda', overlaying: 'y', side: 'right' }, margin: { t: 30, l: 150, r: 200, b: 130 } } } }, { type: 'ArchivePlotCard', config: { title: 'Archive &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(ArchivePlotCard))&lt;/span&gt;', displayOnOpen: true, cubeList: [ [ { label: 'Chip Temp', name: 'chipTemp', color: 'green', yaxis: 'y1' }, { label: 'Watchdog', name: 'watchdog', color: 'blue', yaxis: 'y2' } ] ], plotlyDisplay: { displayModeBar: true, staticPlot: false }, plotlyLayout: { showlegend: true, legend: { x: 0, y: 1.15, font: { size: 20 } }, height: '600', width: '', xaxis: { type: 'date', tickangle: '90', tickfont: { size: 20 }, tickformat: '%H:%M\\\\n%b-%d' }, yaxis: { title: 'Temperature C', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda' }, yaxis2: { title: 'Watchdog', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda', overlaying: 'y', side: 'right' }, margin: { t: 30, l: 150, r: 200, b: 130 } } } }, { type: 'VectorPlotCard', config: { title: 'Resistance Curve &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(VectorPlotCard))&lt;/span&gt;', displayOnOpen: false, cubeList: [ [ { name: 'crv', color: 'blue', mode: 'lines+markers', size: 12, yaxis: 'y1' } ] ], plotlyDisplay: { displayModeBar: true, staticPlot: false }, plotlyLayout: { showlegend: true, legend: { x: 0, y: 1.15, font: { size: 20 } }, height: '600', width: '', xaxis: { title: 'Resistance (kOhms)', titlefont: { color: '#000000', size: 20 }, tickfont: { size: 20 }, fixedrange: false }, yaxis: { title: 'Temperature (K)', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#557a95', zerolinecolor: '#557a95', linecolor: '#557a95', type: 'log', range: [ 0, 3 ] }, margin: { t: 30, l: 150, r: 100, b: 150 } } } }, { type: 'IframeCard', config: { title: 'Info &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(IframeCard))&lt;/span&gt;', displayOnOpen: false, url: 'https://blinky-lite.org/docs/pages/Overview/features.html', extraAttr: { frameborder: '0', width: '100%', height: '100%', allowfullscreen: 'true', mozallowfullscreen: 'true', webkitallowfullscreen: 'true' }, height: '75vw' } }, { type: 'UserCard', config: { title: 'User &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(UserCard))&lt;/span&gt;', displayOnOpen: false } } ], navbar: { config: { imageHeight: '75px', centerImage: '/img/basic.png' } }, title: 'Blinky PicoW', trayTypes: [ 'blinky-mqtt' ], trayUpdateFilter: [ { type: 'blinky-mqtt' } ], multiColumns: true } . ",
-    "url": "/docs/pages/Overview/appBuilderPreview.html#application-builder-widget-library",
+    "title": "Application Builder CubeRowCard Widgets",
+    "content": "For the CubeRowCard there are 13 widgets defined. | GaugeCube | HbarCube | UrlLaunchCube | TextReadCube | TextSetCube | NumberReadCube | TimeStampReadCube | OnOffSetCube | ImageReadCube | LabelReadCube | SettingIncrCube | StateChoiceCube | DropChoiceCube | . ",
+    "url": "/docs/pages/Overview/appBuilderPreview.html#application-builder-cuberowcard-widgets",
     
-    "relUrl": "/pages/Overview/appBuilderPreview.html#application-builder-widget-library"
+    "relUrl": "/pages/Overview/appBuilderPreview.html#application-builder-cuberowcard-widgets"
   },"11": {
+    "doc": "Application Builder",
+    "title": "Sample Application Builder JSON file",
+    "content": "{ allowedRoles: [ 'app02', 'appView' ], app: 'app02', cards: [ { type: 'CubeRowCard', config: { title: 'Status &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(CubeRowCard))&lt;/span&gt;', displayOnOpen: true, cubeRows: [ { type: 'UrlLaunchCube', config: { trayIndex: 0, cubeLabel: 'Home &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(UrlLaunchCube)&lt;/i&gt;', buttonLabel: 'Launch', url: '/' } }, { type: 'TextReadCube', config: { trayIndex: 0, cubeName: 'alias', cubeLabel: 'Device &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(TextReadCube)&lt;/i&gt;' } }, { type: 'TextSetCube', config: { trayIndex: 0, cubeName: 'alias', cubeLabel: 'Device &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(TextSetCube)&lt;/i&gt;' } }, { type: 'NumberReadCube', config: { trayIndex: 0, cubeName: 'watchdog', cubeLabel: 'Watchdog &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(NumberReadCube)&lt;/i&gt;' } }, { type: 'TimeStampReadCube', config: { trayIndex: 0, cubeLabel: 'Update &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(TimeStampReadCube)&lt;/i&gt;' } }, { type: 'NumberReadCube', config: { trayIndex: 0, cubeName: 'chipTemp', cubeLabel: 'Chip Temp &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(NumberReadCube)&lt;/i&gt;' } }, { type: 'OnOffSetCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(OnOffSetCube)&lt;/i&gt;', ocubeRownColor: '#0000ff', offColor: '#e6e6ff', middleColor: '#c825ff', limits: [ 10, 240 ] } }, { type: 'ImageReadCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(ImageReadCube)&lt;/i&gt;', values: [ 10, 125, 240 ], images: [ '/img/blackLight.png', '/img/purpleLight.png', '/img/blueLight.png' ] } }, { type:cubeRow 'LabelReadCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(LabelReadCube)&lt;/i&gt;', values: [ 10, 125, 240 ], labels: [ 'Off', 'Mood', 'On' ], colors: [ 'black', '#c825ff', 'blue' ] } }, { type: 'SettingIncrCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(SettingIncrCube)&lt;/i&gt;', increment: 5 } },cubeRow { type: 'StateChoiceCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(StateChoiceCube)&lt;/i&gt;', borderColor: 'black', borderWidth: 5, states: [ { value: 10, color: '#e6e6ff', text: 'Off' }, { value: 125, color: '#c825ff', text: 'Mood' }, { value: 240, color: '#0000ff', text: 'On' } ] } }, { type: 'DropChoiceCube', conficubeRowg: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(DropChoiceCube)&lt;/i&gt;', choices: [ { value: 10, color: '#e6e6ff', text: 'Off' }, cubeRow { value: 125, color: '#c825ff', text: 'Mood' }, { value: 240, color: '#0000ff', text: 'On' } ] } }, { type: 'NumberSetCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(NumberSetCube)&lt;/i&gt;' } }, { type: 'NumberSetCube', config: { trayIndex: 0, cubeName: 'led2', cubeLabel: 'Red LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(NumberSetCube)&lt;/i&gt;' } } ] } }, { type: 'CubeRowCard', config: { title: 'Gauge Demo &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(CubeRowCard))&lt;/span&gt;', displayOnOpen: true, cubeRows: [ { type: 'SettingIncrCube', config: { trayIndex: 0, cubeName: 'led1', cubeLabel: '', increment: 20 } }, { type: 'GaugeCube', config: { cubeLabel: 'Blue LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(GaugeCube)&lt;/i&gt;', trayIndex: 0, cubeName: 'led1', textsize: 20, lowColor: '#e6e6ff', mediumColor: '#c825ff', highColor: '#0000ff', backgroundColor: '#c6c2bb', labelColor: '#000000', round: 0, limits: [ 0, 80, 160, 250 ] } } ] } }, { type: 'CubeRowCard', config: { title: 'H Bar Demo &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(CubeRowCard))&lt;/span&gt;', displayOnOpen: true, cubeRows: [ { type: 'SettingIncrCube', config: { trayIndex: 0, cubeName: 'led2', cubeLabel: '', increment: 20 } }, { type: 'HbarCube', config: { cubeLabel: 'Red LED &lt;i style=\\\\\"color:var(--color6);font-size:15px;\\\\\"&gt;(HbarCube)&lt;/i&gt;', trayIndex: 0, cubeName: 'led2', textsize: 20, lowColor: '#ffe6e6', mediumColor: '#ff9900', highColor: '#ff0000', backgroundColor: '#c6c2bb', labelColor: '#000000', gridColor: '#ffffff', height: 150, round: 0, limits: [ 0, 80, 160, 250 ] } } ] } }, { type: 'BarPlotCard', config: { title: 'LED Strength &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(BarPlotCard))&lt;/span&gt;', displayOnOpen: true, orientation: 'h', cubeList: [ { trayIndex: 0, cubeName: 'led1', cubeLabel: 'Blue LED', color: 'blue' }, { trayIndex: 0, cubeName: 'led2', cubeLabel: 'RED LED', color: 'red' } ], plotlyDisplay: { displayModeBar: true, staticPlot: false }, plotlyLayout: { showlegend: false, height: '400', width: '', yaxis: { tickfont: { size: 20 } }, xaxis: { title: 'LED Strength', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda', range: [ 0, 300 ] }, margin: { t: 30, l: 150, r: 200, b: 130 } } } }, { type: 'TimePlotCard', config: { title: 'Time Plot &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(TimePlotCard))&lt;/span&gt;', displayOnOpen: false, cubeList: [ [ { label: 'Chip Temp', name: 'chipTemp', color: 'green', yaxis: 'y1' }, { label: 'Watchdog', name: 'watchdog', color: 'blue', yaxis: 'y2' } ] ], plotlyDisplay: { displayModeBar: true, staticPlot: false }, plotlyLayout: { showlegend: true, legend: { x: 0, y: 1.15, font: { size: 20 } }, height: '600', width: '', xaxis: { type: 'date', tickangle: '90', tickfont: { size: 20 }, tickformat: '%H:%M\\\\n%b-%d' }, yaxis: { title: 'Temperature C', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda' }, yaxis2: { title: 'Watchdog', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda', overlaying: 'y', side: 'right' }, margin: { t: 30, l: 150, r: 200, b: 130 } } } }, { type: 'ArchivePlotCard', config: { title: 'Archive &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(ArchivePlotCard))&lt;/span&gt;', displayOnOpen: true, cubeList: [ [ { label: 'Chip Temp', name: 'chipTemp', color: 'green', yaxis: 'y1' }, { label: 'Watchdog', name: 'watchdog', color: 'blue', yaxis: 'y2' } ] ], plotlyDisplay: { displayModeBar: true, staticPlot: false }, plotlyLayout: { showlegend: true, legend: { x: 0, y: 1.15, font: { size: 20 } }, height: '600', width: '', xaxis: { type: 'date', tickangle: '90', tickfont: { size: 20 }, tickformat: '%H:%M\\\\n%b-%d' }, yaxis: { title: 'Temperature C', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda' }, yaxis2: { title: 'Watchdog', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#beceda', zerolinecolor: '#beceda', linecolor: '#beceda', overlaying: 'y', side: 'right' }, margin: { t: 30, l: 150, r: 200, b: 130 } } } }, { type: 'VectorPlotCard', config: { title: 'Resistance Curve &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(VectorPlotCard))&lt;/span&gt;', displayOnOpen: false, cubeList: [ [ { name: 'crv', color: 'blue', mode: 'lines+markers', size: 12, yaxis: 'y1' } ] ], plotlyDisplay: { displayModeBar: true, staticPlot: false }, plotlyLayout: { showlegend: true, legend: { x: 0, y: 1.15, font: { size: 20 } }, height: '600', width: '', xaxis: { title: 'Resistance (kOhms)', titlefont: { color: '#000000', size: 20 }, tickfont: { size: 20 }, fixedrange: false }, yaxis: { title: 'Temperature (K)', titlefont: { color: '#557a95', size: 20 }, tickfont: { color: '#557a95', size: 20 }, gridcolor: '#557a95', zerolinecolor: '#557a95', linecolor: '#557a95', type: 'log', range: [ 0, 3 ] }, margin: { t: 30, l: 150, r: 100, b: 150 } } } }, { type: 'IframeCard', config: { title: 'Info &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(IframeCard))&lt;/span&gt;', displayOnOpen: false, url: 'https://blinky-lite.org/docs/pages/Overview/features.html', extraAttr: { frameborder: '0', width: '100%', height: '100%', allowfullscreen: 'true', mozallowfullscreen: 'true', webkitallowfullscreen: 'true' }, height: '75vw' } }, { type: 'UserCard', config: { title: 'User &lt;span style=\\\\\"color:var(--color6);font-size:20px;\\\\\"&gt;(UserCard))&lt;/span&gt;', displayOnOpen: false } } ], navbar: { config: { imageHeight: '75px', centerImage: '/img/basic.png' } }, title: 'Blinky PicoW', trayTypes: [ 'blinky-mqtt' ], trayUpdateFilter: [ { type: 'blinky-mqtt' } ], multiColumns: true } . ",
+    "url": "/docs/pages/Overview/appBuilderPreview.html#sample-application-builder-json-file",
+    
+    "relUrl": "/pages/Overview/appBuilderPreview.html#sample-application-builder-json-file"
+  },"12": {
     "doc": "App Overview",
     "title": "Blinky-Lite App Overview",
     "content": "Out of the box, Blinky-Lite provides a comprehensive suite of applications. Since there is no need to add 3rd party solutions or external custom scripts (such as the ubiquitous python scripts infesting many other control systems), the Blinky-Lite architecture is self-contained, hence more reliable and secure. ",
     "url": "/docs/pages/Overview/appOverview.html#blinky-lite-app-overview",
     
     "relUrl": "/pages/Overview/appOverview.html#blinky-lite-app-overview"
-  },"12": {
+  },"13": {
     "doc": "App Overview",
     "title": "App Overview",
     "content": " ",
     "url": "/docs/pages/Overview/appOverview.html",
     
     "relUrl": "/pages/Overview/appOverview.html"
-  },"13": {
+  },"14": {
     "doc": "Application Server",
     "title": "Application Server",
     "content": "This tutorial will show you how to install Blinky-Lite on a Ubuntu Server that is installed on amd64 or x86_64. The server should have at least 2048MB of memory and 20GB of disk space. ",
     "url": "/docs/pages/Installation/appServerInstall.html",
     
     "relUrl": "/pages/Installation/appServerInstall.html"
-  },"14": {
+  },"15": {
     "doc": "Application Server",
     "title": "Installing Portainer",
     "content": "Blinky-Lite is composed of a number of Docker containers. We use a web based tool called Portainer to install and orchestrate the containers. From a terminal on your application server, retrieve the Blinky-Lite Portainer installation script . wget https://raw.githubusercontent.com/Blinky-Lite/blinky-compose/main/scripts/installDockerPortainer.sh . Give the script execution privileges . chmod +x installDockerPortainer.sh . Run the script and supply a password for administering the Portainer web app. The password must be at least 12 characters long./installDockerPortainer.sh doNotUseThisPassword . The script will take a while to execute and give a message . …Finished installing docker..serving Portainer on port 9000 . when complete. ",
     "url": "/docs/pages/Installation/appServerInstall.html#installing-portainer",
     
     "relUrl": "/pages/Installation/appServerInstall.html#installing-portainer"
-  },"15": {
+  },"16": {
     "doc": "Application Server",
     "title": "Download blinky-compose",
     "content": "Now open a browser that is on the same network as the Ubuntu server. | Navigate to the blinky-compose repository. | Click the green Code button and select the Download zip option at the bottom of the dialog window. | After the zip file has been downloaded, go to your download folder and extract the zip file. | . ",
     "url": "/docs/pages/Installation/appServerInstall.html#download-blinky-compose",
     
     "relUrl": "/pages/Installation/appServerInstall.html#download-blinky-compose"
-  },"16": {
+  },"17": {
     "doc": "Application Server",
     "title": "Configure the blinky-Lite stack",
     "content": "Return to your web browser and in the address bar enter the IP address of your Ubuntu server followed by a :9000 to navigate to the Portainer web app. | The username for Portainer is admin and the password is what you entered during the installation script. | Click on the “Get Started” button and then click on the Docker icon to reach the Docker dashboard. | From the Docker dashboard click on the “stacks” button. | Press the blue “Add Stack” button and enter the name for your Blinky-Lite stack. | It is recommended to use blinky-lite as the stack name. | Click on the upload option and then under the upload section, press the Select file button. | Navigate to your download directory and open the blinky-compose-main directory that you extracted. | Select the blinky-lite.yaml file. | Next, select the “Load variables from env file” button and navigate to the download directory. | Navigate to the env directory and select the blinky-lite.env file. Configure the Blinky-Lite env variables . Fill in the environmental variables into the table as shown. | DOCKER_TAG - Enter amd64 for now. More choices in the future | BLINKYLITE_PASSWORD - same password as you used for the portainer app | BOX - name of your blinky-lite box eg. my-blinky-box-01 | REMOTE_MQTTSERVER - Enter none. Since this is an introductory tutorial we will not use an external MQTT broker as a bridge | REMOTE_MQTTUSER - Enter none | REMOTE_MQTTPASSWORD - Enter none | HUB - Enter blinky-hub | EXTRA_HUB_TOPIC1 - Enter none | JWTKEYSECRET - Used to encrypt communications between the client web apps and the server. | MAXDBSIZE - The maximum size of the database in bytes. 4500000000 is a good size to start. | TWOFA - The two factor authentication flag. | . ",
     "url": "/docs/pages/Installation/appServerInstall.html#configure-the-blinky-lite-stack",
     
     "relUrl": "/pages/Installation/appServerInstall.html#configure-the-blinky-lite-stack"
-  },"17": {
+  },"18": {
     "doc": "Application Server",
     "title": "Starting the blinky-lite stack",
     "content": "At the bottom of the stack configuration web page, press the blue deploy the stack button. It will take some time to deploy the stack because all the necessary docker containers need to be imported. Once the stack has been deployed, you will see blinky-lite show up on the stacks list. Blinky-Lite will be served on port 80 of the Ubuntu server. Because blinky-lite implements an nginx reverse proxy server, you can also reach the Portainer web application by entering portainer after the server ip address. ",
     "url": "/docs/pages/Installation/appServerInstall.html#starting-the-blinky-lite-stack",
     
     "relUrl": "/pages/Installation/appServerInstall.html#starting-the-blinky-lite-stack"
-  },"18": {
+  },"19": {
     "doc": "Application Server",
     "title": "Viewing the Blinky-Lite database",
     "content": "You can also edit the blinky-lite database by entering mongo-express after the server ip address. The user name for mongo-express is admin and the password is the same as the blinky-lite password you set when configuring the stack. You should only touch the blinky-lite database. The blinky-lite database contains a number of mongo-db collections. For example, you can change user credentials and permissions in users collections. You can set the color scheme of all the applications by adjusting the general app document. You can also adjust the look of the initial landing page. ",
     "url": "/docs/pages/Installation/appServerInstall.html#viewing-the-blinky-lite-database",
     
     "relUrl": "/pages/Installation/appServerInstall.html#viewing-the-blinky-lite-database"
-  },"19": {
+  },"20": {
     "doc": "Architecture",
     "title": "Blinky-Lite Architecture",
     "content": ". | Blinky-Lite Architecture . | The Application Box . | The MQTT Broker | The Application Server | The Database Server | . | Message Trays | Cube Controllers | . | . The Blinky-Lite Architecture consists of three major components: . | Application Box | Message Trays | Controller Cubes | . Fig. 1 Blinky-Lite Architecture . ",
     "url": "/docs/pages/Overview/architecture.html#blinky-lite-architecture",
     
     "relUrl": "/pages/Overview/architecture.html#blinky-lite-architecture"
-  },"20": {
+  },"21": {
     "doc": "Architecture",
     "title": "The Application Box",
     "content": "The Application Box is comprised of three services, the MQTT Broker, the Application Server, and the Database Server. Each of these three services can be hosted on the same computer inside a firewall or on the cloud, or each service can be hosted on its own computer inside a firewall or on the cloud. For reliability and ease of installation, the preferred method is to have each service hosted own its own machine in the cloud. | The MQTT Broker . The MQTT broker provides:. | Communication exchange The communication protocol for Blinky-Lite is MQTT. MQTT uses a publish-subscribe paradigm. The MQTT Broker relays messages between message trays and the Application Server. For prompt communications, the MQTT broker can also relay messages directly between message trays without having to go through the Application Server | Data Pooling Because of the publish-subscribe paradigm, The MQTT broker effectively protects the message trays from being overloaded from too many communication requests from the Application Server. | Security The MQTT broker acts an additional layer of security because both the message trays and Application Server must authenticate to the MQTT broker to pass messages. Since the message tray must initiate the connection to the MQTT Broker, this eliminates the need for external SSH tunnels into your private network for remote access. Finally, the MQTT Broker can be easily configured to only accept specific and unique topics to and from each message tray adding another layer of security. | . | The Application Server . The Application Server tasks are: . | Alarm Scanning The Application Server collects messages from the message trays via the MQTT Broker scans for alarms and routes these alarms to user alarm applications and the SMS messenger | Data Archival The Application Server routes the messages from the message trays to the database server for status update and archival. | User application server The Application Server also hosts the user applications. The Application Server checks user requests via role-based access routing and and routes the requests to the appropriate message trays and database server. The application server is written using the Node-RED programming environment. Node-RED makes it easy: . | to read, edit, and document the code | for the user to change the code | to version control the code | to port the code to other machines | . Fig. 2 Node-RED Programming Environment . | . | The Database Server . Instead of using name-value pairs for describing the data as with most other control system platforms, Blinky-Lite uses a class structure to describe systems in the message trays. This structure makes communicating between subsystems and data archival much more streamlined and easy to read and modify. The data in the class structure is stored in JSON objects which is a common lightweight data-interchange format ideal for communicating with mobile browser-based web applications. Most of the data in the control system is time-sequenced so a non-SQL type of database such as MongoDB or RethinkDB is much easier to configure and use. Currently, Blinky-Lite is configured to interface smoothly with a MongoDB database.1 . The database is divided into collections of JSON object documents to not only handle data archiving but other services as well such as access logs and app configurations. The list of collections in a Blinky-Lite project is: . | trays - tray configuration | archiver - tray data archiving | users - list of users, their credentials, and their roles | appConfig - configurations for the standard applications | appStyleSheets - custom CSS sheets for the standard applications | accessLog - record of all visits to the project | settingsLog - record of all tray settings made in the project | restAccessLog - record of all RESTful interface visits to the project | . | . ",
     "url": "/docs/pages/Overview/architecture.html#the-application-box",
     
     "relUrl": "/pages/Overview/architecture.html#the-application-box"
-  },"21": {
+  },"22": {
     "doc": "Architecture",
     "title": "Message Trays",
     "content": "The concept of message trays is what makes Blinky-Lite truly versatile. The message trays communicate to a device using whatever protocol and hardware is supported by the device, such as Modbus, serial (UART, SPI, I2C, etc.), RS232, MQTT, etc. The message tray packages the device information into a Blinky-Lite Tray JSON object in a standard format that is discussed in [Need REF!]. The tray message is then published to the Application Box MQTT broker. Since the Application Server subscribes to all the message tray topics in a Blinky-Lite project, the Application Server will receive this message. In this way, the applications on the Application Server can be standardized and reused from project to project. Also, any other tray that subscribes to the message tray’s unique topic can also receive the tray’s JSON object. The message tray can also subscribe to other message tray topics or messages sent from the Application Server. These messages can the be used to alter the state of the tray or devices the tray is connected to. As shown in Figure 1, more than one device can be connected to a single tray. Thus, the tray can function as a micro-control system in a truly Edge computing manner. Each message tray runs as a separate Node-RED flow. Usually, there is only a single tray flow running on a single Node-RED process running on a microcomputer such as a Raspberry Pi. However, it is also possible to run multiple tray flows on a single Node-RED instance running on a computer other than a Raspberry Pi, such as computer in the cloud. Local and cloud trays are discussed in [Need Ref!] . ",
     "url": "/docs/pages/Overview/architecture.html#message-trays",
     
     "relUrl": "/pages/Overview/architecture.html#message-trays"
-  },"22": {
+  },"23": {
     "doc": "Architecture",
     "title": "Cube Controllers",
     "content": "Cube controllers are not necessarily required in a Blinky-Lite project. For example, if the device is a Modbus device, then the tray can be directly connected to the device. An example ModBus tray can be found in [Need Ref!]. If the device is, for example, a stepper motor, then some hardware is required to interface the motor to translate tray commands. This is usually done through a micro-controller such as an Arduino, Teensy, or Raspberry Pi Pico. We have developed a number of serial and MQTT interfaces to micro-controllers that can be found at [Needs Ref!]. | MongoDB is not open-source software so the user must provide their own instance of a MongoDB database server. &#8617; . | . ",
     "url": "/docs/pages/Overview/architecture.html#cube-controllers",
     
     "relUrl": "/pages/Overview/architecture.html#cube-controllers"
-  },"23": {
+  },"24": {
     "doc": "Architecture",
     "title": "Architecture",
     "content": " ",
     "url": "/docs/pages/Overview/architecture.html",
     
     "relUrl": "/pages/Overview/architecture.html"
-  },"24": {
+  },"25": {
     "doc": "Cube Explorer App",
     "title": "Cube Explorer",
     "content": "The Cube Explorer App is the Swiss army knife application of Blinky-Lite. As described in the Architecture Overview, Blinky-Lite stores device data in a JSON object called a tray. Name-value pairs inside the tray are called cubes. Besides storing values, each cube also contains a unit description and an alarm block. The Cube Explorer is a user configurable app to read and/or set any combination of cubes from any set of trays that the user has access rights to view. The app also permits the user to set the alarm block configuration of the cube. The user can plot real time data from the cubes or look at the archived history of the cubes. The archived history can also be downloaded into csv format files for off-line analysis. The user can also save multiple personalized cube configurations. ",
     "url": "/docs/pages/Overview/cubeExplorerAppPreview.html#cube-explorer",
     
     "relUrl": "/pages/Overview/cubeExplorerAppPreview.html#cube-explorer"
-  },"25": {
+  },"26": {
     "doc": "Cube Explorer App",
     "title": "Cube Explorer App",
     "content": " ",
     "url": "/docs/pages/Overview/cubeExplorerAppPreview.html",
     
     "relUrl": "/pages/Overview/cubeExplorerAppPreview.html"
-  },"26": {
+  },"27": {
     "doc": "Features",
     "title": "Blinky-Lite Features",
     "content": ". | ",
     "url": "/docs/pages/Overview/features.html#blinky-lite-features",
     
     "relUrl": "/pages/Overview/features.html#blinky-lite-features"
-  },"27": {
+  },"28": {
     "doc": "Features",
     "title": "Mobility",
     "content": "Most other control platforms sit behind a firewall and remote access is an afterthought. Not with Blinky-Lite. Secure remote access was the paramount requirement from the start. All Blinky-Lite applications are web apps that can be securely accessed from anywhere in the world. Web apps require no installation and you are always guaranteed to get the latest version. | ",
     "url": "/docs/pages/Overview/features.html#mobility",
     
     "relUrl": "/pages/Overview/features.html#mobility"
-  },"28": {
+  },"29": {
     "doc": "Features",
     "title": "Security",
     "content": "Blinky-Lite connections are always initiated from within your facility, not from the outside, providing secure information flow from you to the machine/sensor and back. All Blinky-Lite mobile apps require two factor authentication, ensuring that only the right people have access. | ",
     "url": "/docs/pages/Overview/features.html#security",
     
     "relUrl": "/pages/Overview/features.html#security"
-  },"29": {
+  },"30": {
     "doc": "Features",
     "title": "Flexibility",
     "content": "Blinky-Lite can be added independently or on top of any existing control system . | ",
     "url": "/docs/pages/Overview/features.html#flexibility",
     
     "relUrl": "/pages/Overview/features.html#flexibility"
-  },"30": {
+  },"31": {
     "doc": "Features",
     "title": "Open source",
     "content": "Every single line of the Blinky-Lite codebase is version-controlled and open allowing Blinky-Lite to grow with you. | No license fees | No proprietary software | . | ",
     "url": "/docs/pages/Overview/features.html#open-source",
     
     "relUrl": "/pages/Overview/features.html#open-source"
-  },"31": {
+  },"32": {
     "doc": "Features",
     "title": "Services",
     "content": "Most other control platforms only offer a communication protocol, but Blinky-Lite out of the box provides: . | Alarm Scanning | Publish-Subscribe and SMS Alarm messaging | Data Logging | Access Logging | Settings Logging | Application role based access | Data stream role based access | Zero-code application builder | Device-side restricted messaging | Scalar plotting | Vector plotting | User customized app launcher | User customized device viewers | Two factor authentication | . | . ",
     "url": "/docs/pages/Overview/features.html#services",
     
     "relUrl": "/pages/Overview/features.html#services"
-  },"32": {
+  },"33": {
     "doc": "Features",
     "title": "Features",
     "content": " ",
     "url": "/docs/pages/Overview/features.html",
     
     "relUrl": "/pages/Overview/features.html"
-  },"33": {
+  },"34": {
     "doc": "Overview",
     "title": "Blinky-Lite",
     "content": "Blinky-Lite is a full-stack, integrated hardware-software control platform based on Edge computing technology designed by hardware engineers that can perform at any scale from home automation to particle accelerators. Blinky-Lite was developed at the MaxIV Synchrotron Light Source and the European Spallation Source both located in Lund, Sweden. In this world of complex and costly particle accelerators, a strong 24/7 maintenance mindset is a must. It is essential to always understand the state of a machine remotely and to be able to securely troubleshoot it efficiently from anywhere in the world at any time. That’s why we developed Blinky-Lite . ",
     "url": "/docs/#blinky-lite",
     
     "relUrl": "/#blinky-lite"
-  },"34": {
+  },"35": {
     "doc": "Overview",
     "title": "Overview",
     "content": " ",
     "url": "/docs/",
     
     "relUrl": "/"
-  },"35": {
+  },"36": {
     "doc": "Installation",
     "title": "Installation Overview",
     "content": " ",
     "url": "/docs/pages/Installation/installOverview.html#installation-overview",
     
     "relUrl": "/pages/Installation/installOverview.html#installation-overview"
-  },"36": {
+  },"37": {
     "doc": "Installation",
     "title": "Installation",
     "content": " ",
     "url": "/docs/pages/Installation/installOverview.html",
     
     "relUrl": "/pages/Installation/installOverview.html"
-  },"37": {
+  },"38": {
     "doc": "Logbook App",
     "title": "Logbook",
     "content": "For streamlined functionality, the logbook is text-only*. Since all settings are logged, the purpose of the logbook application is to serve as a forum to explain rationale behind changes to the control system parameters. Logbook entries can be searched by date and author. Additions or changes to the logbook are sent to the NTFY system with the following formats . | logbook | logbook-author | logbook-author-action where actions are: . | added | edited | deleted | . | . *We believe that commercial note taking applications should be used for image capturing instead. Logbook Application . Logbook Entry . ",
     "url": "/docs/pages/Overview/logbookAppPreview.html#logbook",
     
     "relUrl": "/pages/Overview/logbookAppPreview.html#logbook"
-  },"38": {
+  },"39": {
     "doc": "Logbook App",
     "title": "Logbook App",
     "content": " ",
     "url": "/docs/pages/Overview/logbookAppPreview.html",
     
     "relUrl": "/pages/Overview/logbookAppPreview.html"
-  },"39": {
+  },"40": {
     "doc": "MyApps",
     "title": "MyApps",
     "content": ". With many control systems, the user can be overwhelmed by the number of applications to use. This is solved in Blinky-Lite by having a personalize launcher app for each user. The MyApps application is configured for each user with a JSON file in the database as shown below. ",
     "url": "/docs/pages/Overview/myAppsPreview.html",
     
     "relUrl": "/pages/Overview/myAppsPreview.html"
-  },"40": {
+  },"41": {
     "doc": "Notification System",
     "title": "Notification System",
     "content": "All control platforms should have a system for notifying users when a device parameter is out of tolerance. The Blinky-Lite Alarm scanner App is a display for parameters not in tolerance but is only useful if a user is looking at the application. The alarm block has fields to notify the user via SMS, however the Blinky-Lite system must be connected to a SMS system which can be expensive to operate. As of 2024, Blinky-Lite now incorporates ntfy which an open source notification platform. The platform uses a publish-subscribe architecture which makes it ideal for notifying groups of users. The subscription topics follow the pattern: . tray_type-tray_name-cube_name . The platform can be accessed via Android, Iphone, web browser or REST api making it easy for the user to subscribe amd receive notifications. The Blinky-Lite notification service is installed as a set of Docker containers with a Docker compose file. The resulting docker container blinky-ntfy must be exposed to an external https web URL. ",
     "url": "/docs/pages/Overview/notifySystem.html",
     
     "relUrl": "/pages/Overview/notifySystem.html"
-  },"41": {
+  },"42": {
     "doc": "Role Based Access",
     "title": "Role Based Access",
     "content": "App authentication is used to keep intruders out of a Blinky-Lite control system which is very important. However, making sure that authenticated users do not do something unintentionally is probably more critical. In Blinky-Lite, this accomplished with role-based-access. Most control systems implement only reading and setting privileges but with Blinky-Lite is possible to restrict not only what actions are permitted by what applications are allowed to be accessed. In addition, because Blinky-Lite groups data into message trays, it is also possible to restrict which data a user has access to as well. Below shows an example user profile for Blinky-Lite role-based-access. ",
     "url": "/docs/pages/Overview/roleBasedAccess.html",
     
     "relUrl": "/pages/Overview/roleBasedAccess.html"
-  },"42": {
+  },"43": {
     "doc": "Settings Log App",
     "title": "Settings Log",
     "content": "The settings log shows the what cube values have been changed over a particular interval of time. Only cubes that a particular user has access to are displayed for that use. ",
     "url": "/docs/pages/Overview/settingsLogAppPreview.html#settings-log",
     
     "relUrl": "/pages/Overview/settingsLogAppPreview.html#settings-log"
-  },"43": {
+  },"44": {
     "doc": "Settings Log App",
     "title": "Settings Log App",
     "content": " ",
     "url": "/docs/pages/Overview/settingsLogAppPreview.html",
     
     "relUrl": "/pages/Overview/settingsLogAppPreview.html"
-  },"44": {
+  },"45": {
     "doc": "App Style Sheets",
     "title": "App Style Sheets",
     "content": " ",
     "url": "/docs/pages/Overview/styleSheets.html",
     
     "relUrl": "/pages/Overview/styleSheets.html"
-  },"45": {
+  },"46": {
     "doc": "App Style Sheets",
     "title": "Application Examples",
     "content": "Every application in a Blinky-Lite project can have its own cascading style sheet (CSS) to define the look and feel of the application. These style sheets are stored in the database as a JSON object. There can be as many style sheets as the user would like and a given style sheet can be shared by a number of applications. | Example 1 | Example 2 | . | | | . ",
     "url": "/docs/pages/Overview/styleSheets.html#application-examples",
     
     "relUrl": "/pages/Overview/styleSheets.html#application-examples"
-  },"46": {
+  },"47": {
     "doc": "App Style Sheets",
     "title": "App Style Sheet JSON",
     "content": ". ",
