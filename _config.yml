@@ -4,7 +4,8 @@ description: Blinky-Lite
 remote_theme: pmarsceill/just-the-docs
 
 url: ""
-logo: "/assets/images/project-logo.png"
+baseurl: "" 
+llogo: "/assets/images/project-logo.png"
 favicon_ico: "/assets/images/favicon.ico"
 color_scheme: blinky
 footer_content: "Distributed by an <a href=\"https://raw.githubusercontent.com/Blinky-Lite/blinky-lite-box/master/LICENSE\">MIT license.</a>"
