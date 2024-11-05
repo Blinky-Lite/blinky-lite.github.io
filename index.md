@@ -26,4 +26,7 @@ Control systems can be broken into four parts.
   * to the control rods of a nuclear reactor.   
 * Lastly, but most important is the environment that reacts to the actuators and provides input to the sensors, thus,  closing the loop.
 
+![]({{ site.urlimg }}BlinkyLiteOverviewImages/feedBackLoop.png) 
 <span style="color:#ff6100">What Blinky-Lite provides is the intelligence part of the  control system, receiving input from sensors, deciding on a course of action, and relaying that course to the actuators.</span>
+ 
+
