@@ -77,131 +77,145 @@
     "relUrl": "/pages/overview/customization.html#overview---features---customization"
   },"11": {
     "doc": "Customization",
+    "title": "Application Builder Cards",
+    "content": "Cards can be arranged in an order and the can be more than one CubeRowCard. There are currently nine different types of cards. | CubeRowCard | BarPlotCard | TimePlotCard | ArchivePlotCard | VectorPlotCard | IframeCard | UserCard | XyPlotCard | CustomCard | . ",
+    "url": "/docs/pages/overview/customization.html#application-builder-cards",
+    
+    "relUrl": "/pages/overview/customization.html#application-builder-cards"
+  },"12": {
+    "doc": "Customization",
+    "title": "Application Builder CubeRowCard Widgets",
+    "content": "For the CubeRowCard there are 13 widgets defined. | GaugeCube | HbarCube | UrlLaunchCube | TextReadCube | TextSetCube | NumberReadCube | TimeStampReadCube | OnOffSetCube | ImageReadCube | LabelReadCube | SettingIncrCube | StateChoiceCube | DropChoiceCube | . ",
+    "url": "/docs/pages/overview/customization.html#application-builder-cuberowcard-widgets",
+    
+    "relUrl": "/pages/overview/customization.html#application-builder-cuberowcard-widgets"
+  },"13": {
+    "doc": "Customization",
     "title": "Customization",
     "content": " ",
     "url": "/docs/pages/overview/customization.html",
     
     "relUrl": "/pages/overview/customization.html"
-  },"12": {
+  },"14": {
     "doc": "Features",
     "title": "Overview - Features",
     "content": " ",
     "url": "/docs/pages/overview/features.html#overview---features",
     
     "relUrl": "/pages/overview/features.html#overview---features"
-  },"13": {
+  },"15": {
     "doc": "Features",
     "title": "Features",
     "content": " ",
     "url": "/docs/pages/overview/features.html",
     
     "relUrl": "/pages/overview/features.html"
-  },"14": {
+  },"16": {
     "doc": "Full Stack",
     "title": "Overview - Features - Full Stack",
     "content": "Since the key feature of Blinky-Lite is remote access, security is the driving force in the development of Blinky-Lite. To be secure, a control platform must be complete or full-stack. Most available control platforms are just communication protocols. This leaves the user with missing functionality which often leads to a patchwork system, riddled with potential security vulnerabilities. In contrast, Blinky-Lite strives to deliver a complete system. Not only does Blinky-Lite provide a set of device interfaces, a communication protocol, and configuration databases, it also provides . | an alarm system, | notification system, | device viewers, | and plotting packages. | . The data archiving system also includes access and setting history. User authentication interfaces include one-time-password, two factor authentication. And, instead of name-value pairs, device data is object-oriented which lends to complex data types, such as vectors and images. There is even an integrated logbook application, with hooks into the notification system. Blinky-Lite Alarm Scanner . Blinky-Lite Notification Application . Blinky-Lite Device Viewer . Blinky-Lite Time Plotter . Blinky-Lite Archive Plotter . Blinky-Lite Access Log . Blinky-Lite Settings Log . Blinky-Lite Two Factor Authentication . Examples of vector and image data in Blinky-Lite . Blinky-Lite Logbook Application . ",
     "url": "/docs/pages/overview/fullStack.html#overview---features---full-stack",
     
     "relUrl": "/pages/overview/fullStack.html#overview---features---full-stack"
-  },"15": {
+  },"17": {
     "doc": "Full Stack",
     "title": "Full Stack",
     "content": " ",
     "url": "/docs/pages/overview/fullStack.html",
     
     "relUrl": "/pages/overview/fullStack.html"
-  },"16": {
+  },"18": {
     "doc": "Overview",
     "title": "Blinky-Lite",
     "content": "An open-source secure , remotely accessible, full-stack, integrated hardware-software control platform. Blinky-Lite was developed at the MaxIV Synchrotron Light Source and the European Spallation Source both located in Lund, Sweden. In this world of complex and costly particle accelerators, a strong 24/7 maintenance mindset is a must. It is essential to always understand the state of a machine remotely and to be able to securely troubleshoot it efficiently from anywhere in the world at any time. That’s why we developed Blinky-Lite . ",
     "url": "/docs/#blinky-lite",
     
     "relUrl": "/#blinky-lite"
-  },"17": {
+  },"19": {
     "doc": "Overview",
     "title": "Control system intelligence",
     "content": "When most people think of a control system, they imagine a room filled with dials and computer screens. But control systems are so ubiquitous that most people take them for granted. For example, the thermostat in a house is part of a control system . The stop lights in a city are synchronised by another system. One can even think of the central nervous system in a human body as a control system. Control systems can be broken into four parts. | First, there are sensors to observe the surrounding environment. | Next, there is some type of intelligence to process the sensor input and decide on a course of action. The intelligence can be . | a mechanical linkage, | an electronic circuit, | a computer program, | or even a human brain. | . | The third part is a set of actuators to implement the course of action. Actuators can be anything . | from human hands | to the control rods of a nuclear reactor. | . | Lastly, but most important is the environment that reacts to the actuators and provides input to the sensors, thus, closing the loop. | . What Blinky-Lite provides is the intelligence part of the control system, receiving input from sensors, deciding on a course of action, and relaying that course to the actuators. ",
     "url": "/docs/#control-system-intelligence",
     
     "relUrl": "/#control-system-intelligence"
-  },"18": {
+  },"20": {
     "doc": "Overview",
     "title": "Overview",
     "content": " ",
     "url": "/docs/",
     
     "relUrl": "/"
-  },"19": {
+  },"21": {
     "doc": "Installation",
     "title": "Installation Overview",
     "content": " ",
     "url": "/docs/pages/Installation/installOverview.html#installation-overview",
     
     "relUrl": "/pages/Installation/installOverview.html#installation-overview"
-  },"20": {
+  },"22": {
     "doc": "Installation",
     "title": "Installation",
     "content": " ",
     "url": "/docs/pages/Installation/installOverview.html",
     
     "relUrl": "/pages/Installation/installOverview.html"
-  },"21": {
+  },"23": {
     "doc": "Communication Protocol",
     "title": "Overview - Architecture - Communication Protocol",
     "content": "To communicate with internal devices, Blinky-Lite uses an MQTT container. MQTT is a publish-subscribe communication protocol developed by IBM for the monitoring of oil pipelines running through the desert, but is now a very popular IoT communication protocol. A key security feature of MQTT is that every device initiates authentication to the communication broker, and the publish-subscribe topics for each device are linked to a unique device authentication. This is much different than most other control system protocols in which communication to the device is initiated externally, which can compromise security. Also, In traditional systems, devices can be overwhelmed by too many requests for data. However, MQTT provides inherent data pooling. That is, devices only publish data when they are ready, regardless of how many requests from users. Blinky-Lite Architecture . ",
     "url": "/docs/pages/overview/mqtt.html#overview---architecture---communication-protocol",
     
     "relUrl": "/pages/overview/mqtt.html#overview---architecture---communication-protocol"
-  },"22": {
+  },"24": {
     "doc": "Communication Protocol",
     "title": "Communication Protocol",
     "content": " ",
     "url": "/docs/pages/overview/mqtt.html",
     
     "relUrl": "/pages/overview/mqtt.html"
-  },"23": {
+  },"25": {
     "doc": "Remote Access",
     "title": "Overview - Features - Remote Access",
     "content": "Consider the image of control rooms with TV screens and dials. This concept of a control system is great for large facilities that have a 24/7 staff on site. But this way of operating is expensive and inefficient for most types of facilities. Facility malfunctions usually do not happen while sitting in a control room during business hours. Many times, malfunctions occur in the middle of the night when experts are far away from the site. Also the world is interconnected as it has never been before. So an engineer needs access to the control system out in the field; wherever and whenever that may be. To bring the control system to the engineer, Blinky-Lite was designed from the ground up to be a remotely accessible control platform. Sensors and actuators can be located anywhere in the world. All user applications are web applications that can be used on a mobile phone, tablet, desktop computer, or even in a control room. Remote Access with Blinky-Lite . ",
     "url": "/docs/pages/overview/remoteAccess.html#overview---features---remote-access",
     
     "relUrl": "/pages/overview/remoteAccess.html#overview---features---remote-access"
-  },"24": {
+  },"26": {
     "doc": "Remote Access",
     "title": "Remote Access",
     "content": " ",
     "url": "/docs/pages/overview/remoteAccess.html",
     
     "relUrl": "/pages/overview/remoteAccess.html"
-  },"25": {
+  },"27": {
     "doc": "Security",
     "title": "Overview - Architecture - Security",
     "content": " ",
     "url": "/docs/pages/overview/security.html#overview---architecture---security",
     
     "relUrl": "/pages/overview/security.html#overview---architecture---security"
-  },"26": {
+  },"28": {
     "doc": "Security",
     "title": "Role Based Access",
     "content": "As discussed earlier, with Blinky-Lite, the user can only interact with the control system through applications served from the application server. The user accesses the web applications through a reverse proxy server that is configured to permit only appropriate routing requests from the user. Next in the line of defence is role-based authentication. In the Blinky-Lite database, roles or permissions are assigned for each user. These roles limit which applications a user can use, what the user can do in each application, such as read or write, and what data types and data the user can interact with. Role based access database . When a user logs into the control system with two factor authentication, their credentials are matched against those stored in the user database. The user’s roles that are defined in the user database are encrypted in a Jason web token. This token is then sent back to the user and is stored as an encrypted cookie in her browser. Each time the user interacts with the application server, she presents the encrypted token, and the server decides whether the request can be granted, based on the user’s allowed roles. User authentication flow. ",
     "url": "/docs/pages/overview/security.html#role-based-access",
     
     "relUrl": "/pages/overview/security.html#role-based-access"
-  },"27": {
+  },"29": {
     "doc": "Security",
     "title": "One way reverse proxy",
     "content": "At this point, Blinky-Lite is perfectly suited for operations inside an internet firewall. However, a remote access control platform is not of much use if it cannot be securely accessed from outside the user’s facility. For secure remote access, Blinky lite provides a tunnel container that sends traffic through the firewall, using a virtual private network. Now, Blinky-Lite goes one step further by routing the VPN to an outbound-only, reverse proxy server, located in the cloud, such as Cloudflare zero trust. This reverse proxy server permits only allowed routes to the application server, and provides the first line of defence against the wild-world of the internet, such as denial-of-service attacks. Blinky-Lite Architecture . ",
     "url": "/docs/pages/overview/security.html#one-way-reverse-proxy",
     
     "relUrl": "/pages/overview/security.html#one-way-reverse-proxy"
-  },"28": {
+  },"30": {
     "doc": "Security",
     "title": "External MQTT Brokers",
     "content": "Because Blinky-Lite uses MQTT as its device communication protocol, Blinky-Lite can be easily extended to a multi-node distributed control platform, by bridging multiple Blinky-Lite systems to an external MQTT broker. By configuring the topics on the external broker, it is possible to share only a certain subset of devices between Blinky-Lite systems. This configuration provides an excellent balance between data sharing and compartmentalising. Note, again, that connections to the external broker are initiated from the internal brokers, providing a secure connection. ",
     "url": "/docs/pages/overview/security.html#external-mqtt-brokers",
     
     "relUrl": "/pages/overview/security.html#external-mqtt-brokers"
-  },"29": {
+  },"31": {
     "doc": "Security",
     "title": "Security",
     "content": " ",

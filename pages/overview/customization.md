@@ -18,3 +18,33 @@ Currently, the app builder has nine different types of cards and thirteen differ
 
 ![]({{ site.urlimg }}BlinkyLiteOverviewImages/appBuilderApps.png)  
 <span style="color:#fdc100">Examples for Apps built from the Blinky-Lite App Builder</span>
+
+## Application Builder Cards
+Cards can be arranged in an order and the can be more than one CubeRowCard. There are currently nine different types of cards. 
+
+- [CubeRowCard]({{ site.urlimg }}/appBuilder/cubeRows.png) 
+- [BarPlotCard]({{ site.urlimg }}/appBuilder/barPlot.png)
+- [TimePlotCard]({{ site.urlimg }}/appBuilder/timePlot.png)
+- [ArchivePlotCard]({{ site.urlimg }}/appBuilder/archivePlot.png)
+- [VectorPlotCard]({{ site.urlimg }}/appBuilder/vectorPlot.png)
+- [IframeCard]({{ site.urlimg }}/appBuilder/iframePlot.png)
+- [UserCard]({{ site.urlimg }}/appBuilder/userCard.png)
+- [XyPlotCard]({{ site.urlimg }}/appBuilder/xyPlot.png)
+- [CustomCard]({{ site.urlimg }}/appBuilder/customCard.png)
+
+## Application Builder CubeRowCard Widgets
+For the CubeRowCard there are 13  widgets defined.
+
+- [GaugeCube]({{ site.urlimg }}/appBuilder/gaugePlots.png)
+- [HbarCube]({{ site.urlimg }}/appBuilder/gaugePlots.png)
+- [UrlLaunchCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [TextReadCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [TextSetCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [NumberReadCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [TimeStampReadCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [OnOffSetCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [ImageReadCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [LabelReadCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [SettingIncrCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [StateChoiceCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
+- [DropChoiceCube]({{ site.urlimg }}/appBuilder/cubeRows.png)
